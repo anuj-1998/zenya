@@ -1,12 +1,16 @@
 import "./index.css";
 import Carousel from "./Carousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../src/assets/logo.png';
 const menuLinks = [
-  { label: "HOME", href: "https://m-zenya.com.my/" },
+  { label: "HOME", href: "#" },
+  { label: "ABOUT US", href: "#" },
+  { label: "PROJECTS", href: "#" },
+  { label: "GALLERY", href: "#" },
+  { label: "CONTACT US", href: "#" },
   // { label: "FACILITIES", href: "https://m-zenya.com.my/facilities/" },
   // { label: "FLOOR PLANS", href: "https://m-zenya.com.my/floor-plans-type-a/" },
   // { label: "SITE PROGRESS", href: "https://m-zenya.com.my/site-progress/" },
-  { label: "GALLERY", href: "https://m-zenya.com.my/gallery/" },
   // { label: "BLOG", href: "https://m-zenya.com.my/blog/" },
   // { label: "360 VR", href: "https://m-zenya.com.my/360-vr/" },
   // { label: "LOCATION", href: "https://m-zenya.com.my/location/" },
@@ -25,9 +29,9 @@ function App() {
         <div className="max-w-7xl h-20 mx-auto flex items-center justify-between px-4 gap-8">
           <a href="/">
             <img
-              src="https://ext.same-assets.com/1549166357/4072114345.png"
+              src={logo}
               alt="Menu Logo M-Zenya"
-              className="h-11"
+              className="h-14"
             />
           </a>
           <ul className="flex items-center gap-4 xl:gap-7">
@@ -65,7 +69,7 @@ function App() {
         {/* Hero Section */}
         <section className="w-full relative flex items-center justify-center min-h-[35rem] bg-gradient-to-b from-[#f0e1d6] via-[#fff3e3] to-[#f2f5f6]">
           <img
-            src="https://ext.same-assets.com/1549166357/1442285336.png"
+            src={logo}
             alt="M Zenya Logo"
             className="absolute left-8 top-8 h-20 z-10 drop-shadow"
           />
