@@ -2,18 +2,15 @@ import "./index.css";
 import Carousel from "./Carousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../src/assets/logo.png';
+import homepage from '../src/assets/homepage.jpg';
+import { Link, Element } from 'react-scroll';
+
 const menuLinks = [
-  { label: "HOME", href: "#" },
-  { label: "ABOUT US", href: "#" },
-  { label: "PROJECTS", href: "#" },
-  { label: "GALLERY", href: "#" },
-  { label: "CONTACT US", href: "#" },
-  // { label: "FACILITIES", href: "https://m-zenya.com.my/facilities/" },
-  // { label: "FLOOR PLANS", href: "https://m-zenya.com.my/floor-plans-type-a/" },
-  // { label: "SITE PROGRESS", href: "https://m-zenya.com.my/site-progress/" },
-  // { label: "BLOG", href: "https://m-zenya.com.my/blog/" },
-  // { label: "360 VR", href: "https://m-zenya.com.my/360-vr/" },
-  // { label: "LOCATION", href: "https://m-zenya.com.my/location/" },
+  { label: "HOME", to: "home" },
+  { label: "ABOUT US", to: "about" },
+  { label: "PROJECTS", to: "projects" },
+  { label: "GALLERY", to: "gallery" },
+  { label: "CONTACT US", to: "contact" },
 ];
 
 function App() {
@@ -37,14 +34,14 @@ function App() {
           <ul className="flex items-center gap-4 xl:gap-7">
             {menuLinks.map((link) => (
               <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-[#1f3441] font-semibold text-white hover:text-black text-sm xl:text-base px-2 py-1 rounded hover:bg-[#f7e6d5] transition"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to={link.to}
+                  smooth={true}
+                  duration={100}
+                  className="cursor-pointer text-[#1f3441] font-semibold text-white hover:text-black text-sm xl:text-base px-2 py-1 rounded hover:bg-[#f7e6d5] transition"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li key="register">
@@ -67,165 +64,161 @@ function App() {
       </nav>
       <main className="min-h-screen w-full bg-gradient-to-b from-[#fff3e3] to-[#e0eaea] font-sans overflow-x-hidden text-[#1f3441]">
         {/* Hero Section */}
-        <section className="w-full relative flex items-center justify-center min-h-[35rem] bg-gradient-to-b from-[#f0e1d6] via-[#fff3e3] to-[#f2f5f6]">
-          <img
-            src={logo}
-            alt="M Zenya Logo"
-            className="absolute left-8 top-8 h-20 z-10 drop-shadow"
-          />
-          <img
-            src="https://ext.same-assets.com/1549166357/4264571279.jpeg"
-            alt="Hero Building Render"
-            className="relative z-10 w-[38rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
-            style={{ marginTop: "3rem" }}
-          />
-          <a
-            href="#register"
-            className="absolute right-8 top-12 bg-[#be946d] text-white px-6 py-2 rounded-full font-bold shadow hover:bg-[#8d6b3e] transition"
-          >
-            REGISTER NOW
-          </a>
-          {/* Decorative Patterns */}
-          <img
-            src="https://ext.same-assets.com/1549166357/2419435022.png"
-            alt="Curve1"
-            className="absolute left-2 top-32 h-24 opacity-70"
-          />
-          <img
-            src="https://ext.same-assets.com/1549166357/3497995044.png"
-            alt="Cycling"
-            className="absolute bottom-[-25px] left-24 h-32 w-auto"
-          />
-          <img
-            src="https://ext.same-assets.com/1549166357/1232797557.png"
-            alt="Curve2"
-            className="absolute right-16 bottom-0 h-28 opacity-50"
-          />
-        </section>
-        {/* Perched Between Vibrancy and Serenity Section */}
-        <section className="w-full px-4 py-12 bg-transparent flex flex-col lg:flex-row items-center max-w-6xl mx-auto gap-12">
-          <div className="flex-1 lg:pr-8">
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-4 tracking-tighter">
-              Perched between vibrancy and serenity
-            </h2>
-            <div className="bg-[#dcbba4]/20 rounded-lg p-6 text-lg max-w-xl shadow-sm mb-3">
-              <p className="mb-2">
-                is a rare domain that blurs the line between urban pulse and
-                rustic embrace.
-              </p>
-              <p>
-                Greeted daily by the breathtaking views of the Kepong Metropolitan
-                Lake Garden, your living experience are further completed by a host
-                of facilities, including the alfresco lakefront outlets just an
-                elevator ride away.
-              </p>
-              <p>
-                For more retail vibes, step out of M Zenya to the lifestyle stores
-                and cafes at Keponggi Square &mdash; an oriental-themed piazza for
-                lakeside food and leisure, completing the experience for lakefront
-                living in the city.
-              </p>
-            </div>
-          </div>
-          <div className="flex-1">
+        <Element name="home">
+          <section className="w-full relative flex items-center justify-center min-h-[35rem] bg-gradient-to-b from-[#f0e1d6] via-[#fff3e3] to-[#f2f5f6]">
             <img
-              src="https://ext.same-assets.com/1549166357/2517988317.png"
-              alt="M Zenya Pool Render"
-              className="w-full rounded-lg shadow-2xl object-contain"
+              src={logo}
+              alt="M Zenya Logo"
+              className="absolute left-8 top-8 h-20 z-10 drop-shadow"
             />
-          </div>
-        </section>
+            <img
+              src={homepage}
+              alt="Hero Building Render"
+              className="relative z-10 w-[38rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
+              style={{ marginTop: "3rem" }}
+            />
+            <a
+              href="#register"
+              className="absolute right-8 top-12 bg-[#be946d] text-white px-6 py-2 rounded-full font-bold shadow hover:bg-[#8d6b3e] transition"
+            >
+              REGISTER NOW
+            </a>
+            {/* Decorative Patterns */}
+            <img
+              src="https://ext.same-assets.com/1549166357/2419435022.png"
+              alt="Curve1"
+              className="absolute left-2 top-32 h-24 opacity-70"
+            />
+            <img
+              src="https://ext.same-assets.com/1549166357/3497995044.png"
+              alt="Cycling"
+              className="absolute bottom-[-25px] left-24 h-32 w-auto"
+            />
+            <img
+              src="https://ext.same-assets.com/1549166357/1232797557.png"
+              alt="Curve2"
+              className="absolute right-16 bottom-0 h-28 opacity-50"
+            />
+          </section>
+        </Element>
+        {/* Perched Between Vibrancy and Serenity Section */}
+        <Element name="about">
+          <section className="w-full px-4 py-12 bg-transparent flex flex-col lg:flex-row items-center max-w-6xl mx-auto gap-12">
+            <div className="flex-1 lg:pr-8">
+              <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-4 tracking-tighter">
+                Perched between vibrancy and serenity
+              </h2>
+              <div className="bg-[#dcbba4]/20 rounded-lg p-6 text-lg max-w-xl shadow-sm mb-3">
+                <p>
+                  Sarawak Land (Kemena Park) Sdn Bhd (“Sarawak Land”), the property arm of the Samling Strategic Corporation Sdn. Bhd. was incorporated in Malaysia on 14 May 1993. <strong>Sarawak Land (Kemena Park)</strong> Sdn Bhd has undertake numerous development in Bintulu Town Development which covers Commercial, Residential and Government Projects.
+                </p>
+              </div>
+            </div>
+            <div className="flex-1">
+              <img
+                src="https://ext.same-assets.com/1549166357/2517988317.png"
+                alt="M Zenya Pool Render"
+                className="w-full rounded-lg shadow-2xl object-contain"
+              />
+            </div>
+          </section>
+        </Element>
         {/* Features & Facility Tiles */}
-        <section className="w-full py-10 px-4 bg-[#fff8f2] relative">
-          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6">
-            {/* Tile 1 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/1916657042.png"
-                alt="Accessibility"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">
-                Excellent Accessibility to Highways and MRT
-              </span>
+        <Element name="projects">
+          <section className="w-full py-10 px-4 bg-[#fff8f2] relative">
+            <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6">
+              {/* Tile 1 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/1916657042.png"
+                  alt="Accessibility"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">
+                  Excellent Accessibility to Highways and MRT
+                </span>
+              </div>
+              {/* Tile 2 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/1653454076.png"
+                  alt="View"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">
+                  Priceless view of crystalline lake and park
+                </span>
+              </div>
+              {/* Tile 3 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/1335953297.png"
+                  alt="Greenery"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">
+                  Surrounded by Greenery
+                </span>
+              </div>
+              {/* Tile 4 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/1457041475.png"
+                  alt="Security"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">Multi-tier Security</span>
+              </div>
+              {/* Tile 5 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/1234361292.png"
+                  alt="EV Charging"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">EV Charging Stations</span>
+              </div>
+              {/* Tile 6 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/4107301636.png"
+                  alt="Waste Collection"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">
+                  Automated Waste Collection System
+                </span>
+              </div>
+              {/* Tile 7 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/1058367503.png"
+                  alt="Shops"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">
+                  Shops &amp; F&amp;B with Lake Frontage
+                </span>
+              </div>
+              {/* Tile 8 */}
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src="https://ext.same-assets.com/1549166357/589207322.png"
+                  alt="Smart Community"
+                  className="h-14 mb-3"
+                />
+                <span className="text-center text-sm font-semibold">Smart Community</span>
+              </div>
             </div>
-            {/* Tile 2 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/1653454076.png"
-                alt="View"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">
-                Priceless view of crystalline lake and park
-              </span>
-            </div>
-            {/* Tile 3 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/1335953297.png"
-                alt="Greenery"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">
-                Surrounded by Greenery
-              </span>
-            </div>
-            {/* Tile 4 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/1457041475.png"
-                alt="Security"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">Multi-tier Security</span>
-            </div>
-            {/* Tile 5 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/1234361292.png"
-                alt="EV Charging"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">EV Charging Stations</span>
-            </div>
-            {/* Tile 6 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/4107301636.png"
-                alt="Waste Collection"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">
-                Automated Waste Collection System
-              </span>
-            </div>
-            {/* Tile 7 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/1058367503.png"
-                alt="Shops"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">
-                Shops &amp; F&amp;B with Lake Frontage
-              </span>
-            </div>
-            {/* Tile 8 */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://ext.same-assets.com/1549166357/589207322.png"
-                alt="Smart Community"
-                className="h-14 mb-3"
-              />
-              <span className="text-center text-sm font-semibold">Smart Community</span>
-            </div>
-          </div>
-        </section>
-        <Carousel />
+          </section>
+        </Element>
+        <Element name="gallery">
+          <Carousel />
+        </Element>
         {/* Registration Form & Award */}
-        <section className="py-16 px-4 bg-[#e0eaea] flex flex-col md:flex-row items-start justify-center gap-16">
-          <div className="bg-[#1f3441] text-white rounded-lg shadow-lg p-8 flex flex-col items-center min-w-[340px] max-w-[400px] w-full">
+        <Element name='contact'>
+          <section className="py-16 px-4 bg-[#e0eaea] flex flex-col md:flex-row items-start justify-center gap-16">
+            {/* <div className="bg-[#1f3441] text-white rounded-lg shadow-lg p-8 flex flex-col items-center min-w-[340px] max-w-[400px] w-full">
             <img
               src="https://ext.same-assets.com/1549166357/1718387563.png"
               alt="GreenRE Bronze"
@@ -234,82 +227,87 @@ function App() {
             <span className="text-lg font-bold mb-2">
               M Zenya has been awarded Bronze Provisional GreenRE Certification
             </span>
-          </div>
-          <form
-            id="register"
-            className="flex-1 min-w-[320px] max-w-lg w-full bg-[#fff3e3] rounded-lg shadow-xl p-8"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <h3 className="font-bold text-xl md:text-3xl mb-4 tracking-wide text-[#1f3441]">
-              Inquiries
-            </h3>
-            <div className="space-y-3">
-              <input
-                name="name"
-                placeholder="First name"
-                required
-                className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
-              />
-              <input
-                name="email"
-                placeholder="Email"
-                type="email"
-                required
-                className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
-              />
-              <input
-                name="mobile"
-                placeholder="Phone number"
-                required
-                className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
-              />
-              <input
-                name="budget"
-                placeholder="Budget"
-                className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
-              />
-              <div className="flex items-center gap-2 mt-1">
+          </div> */}
+            <form
+              id="register"
+              className="flex-1 min-w-[320px] max-w-lg w-full bg-[#fff3e3] rounded-lg shadow-xl p-8"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <h3 className="font-bold text-xl md:text-3xl mb-4 tracking-wide text-[#1f3441]">
+                Inquiries
+              </h3>
+              <div className="space-y-3">
                 <input
-                  type="checkbox"
-                  id="agree"
+                  name="first_name"
+                  placeholder="First name"
                   required
-                  className="accent-[#1f3441]"
+                  className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
                 />
-                <label htmlFor="agree" className="text-xs text-[#6b4a3b]">
-                  I hereby consent to Mah Sing Group contacting me.{" "}
-                  <a href="#" className="underline">
-                    Terms & Conditions
-                  </a>
-                  .
-                </label>
+                <input
+                  name="last_name"
+                  placeholder="Last name"
+                  required
+                  className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
+                />
+                <input
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  required
+                  className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
+                />
+                <input
+                  name="mobile"
+                  placeholder="Phone number"
+                  required
+                  className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
+                />
+                <input
+                  name="budget"
+                  placeholder="Your message"
+                  className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
+                />
+                <div className="flex items-center gap-2 mt-1">
+                  <input
+                    type="checkbox"
+                    id="agree"
+                    required
+                    className="accent-[#1f3441]"
+                  />
+                  <label htmlFor="agree" className="text-xs text-[#6b4a3b]">
+                    I hereby consent to Mah Sing Group contacting me.{" "}
+                    <a href="#" className="underline">
+                      Terms & Conditions
+                    </a>
+                    .
+                  </label>
+                </div>
               </div>
-            </div>
-            <button className="mt-5 w-full py-2 bg-[#1f3441] hover:bg-[#3facb6] text-white font-bold rounded shadow transition">
-              SUBMIT
-            </button>
-          </form>
-        </section>
+              <button className="mt-5 w-full py-2 bg-[#1f3441] hover:bg-[#3facb6] text-white font-bold rounded shadow transition">
+                SUBMIT
+              </button>
+            </form>
+          </section>
+        </Element>
         {/* Footer */}
         <footer className="w-full py-10 px-8 bg-[#1f3441] text-white">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-6">
             <div className="text-sm text-[#e0eaea]">
-              <strong>M Zenya, Kepong</strong> – A New Lakefront Condo Property
-              Project
+              Miri Office : 271-272 Jln Brighton, Jln Temenggong Datuk Oyong Lawai Jau, Miri SWK 98000
               <br />
-              New Lakeside Condo For Sale in Kepong where Serene Living Meets Urban
-              Convenience.
+              Bintulu Office : No.461, Lot 4110, Jalan Kambar Bubin, Parkcity Commerce Square, Phase 5, Sarawak, 97008 Bintulu
               <br />
               <br />
               For further enquiries, please contact:
               <br />
-              <span className="font-bold">03 9078 2899</span>
+              <span className="font-bold">085-423033</span>
               <br />
               Email:{" "}
               <a
-                href="mailto:m-zenya@mahsing.com.my"
+                href="mailto:hwangll@samling.com.my"
                 className="underline"
               >
-                m-zenya@mahsing.com.my
+                hwangll@samling.com.my
               </a>
             </div>
             <div className="flex items-center gap-x-7">
