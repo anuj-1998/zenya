@@ -6,6 +6,7 @@ import homepage from '../src/assets/homepage.jpg';
 import { Link, Element } from 'react-scroll';
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import ProjectsSection from "./ProjectsSection";
+import Navbar from "./Navbar";
 
 const menuLinks = [
   { label: "HOME", to: "home" },
@@ -19,50 +20,11 @@ function App() {
   return (
     <>
       {/* Top Nav Bar */}
-      <nav
-        className="w-full bg-white/80 backdrop-blur sticky top-0 z-30 shadow-sm border-b border-[#eee]"
-        style={{
-          background: 'linear-gradient(90deg, rgba(17, 42, 64, 1) 10%, rgba(17, 42, 64, 1) 30%, rgba(205, 129, 106, 1) 100%)'
-        }}
-      >
-        <div className="max-w-7xl h-20 mx-auto flex items-center justify-between px-4 gap-8">
-          <a href="/">
-            <img
-              src={logo}
-              alt="Menu Logo M-Zenya"
-              className="h-14"
-            />
-          </a>
-          <ul className="flex items-center gap-4 xl:gap-7">
-            {menuLinks.map((link) => (
-              <li key={link.label}>
-                <Link
-                  to={link.to}
-                  smooth={true}
-                  duration={100}
-                  className="cursor-pointer text-[#1f3441] font-semibold text-white hover:text-black text-sm xl:text-base px-2 py-1 rounded hover:bg-[#f7e6d5] transition"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-            <li key="register">
-              <a
-                href="#register"
-                className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold bg-[#dcbba4] hover:bg-[#be946d] text-[#1f3441] shadow ml-2 transition"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://ext.same-assets.com/1549166357/2999530113.png"
-                  className="h-6"
-                  alt="register now"
-                />
-                REGISTER
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <section>
+        <section>
+          <Navbar menuLinks={menuLinks} logo={logo} />
+        </section>
+      </section>
       <main className="min-h-screen w-full bg-gradient-to-b from-[#fff3e3] to-[#e0eaea] font-sans overflow-x-hidden text-[#1f3441]">
         {/* Hero Section */}
         <Element name="home">
@@ -126,8 +88,19 @@ function App() {
         </Element>
         {/* Features & Facility Tiles */}
         <Element name="projects">
-          <section className="w-full py-10 px-4 bg-[#fff8f2] relative">
-            <ProjectsSection />
+          <section className="relative w-full py-10 px-4 overflow-hidden">
+            {/* Background Image Layer */}
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm opacity-40 z-0"
+              style={{
+                backgroundImage: `url(${homepage})`,
+              }}
+            />
+
+            {/* Content Layer */}
+            <div className="relative z-10 bg-[#fff8f2]/80 backdrop-blur-sm rounded-xl p-4">
+              <ProjectsSection />
+            </div>
           </section>
         </Element>
         <Element name="gallery">
