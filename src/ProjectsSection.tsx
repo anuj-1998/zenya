@@ -20,15 +20,15 @@ const ProjectsSection: React.FC = () => {
   const cardData: Record<CardKey, CardInfo> = {
     Commercial: {
       image: Commercial,
-      description: 'EV Charging Stations, Automated Waste Collection',
+      //description: 'EV Charging Stations, Automated Waste Collection',
     },
     Residential: {
       image: Residential,
-      description: 'Priceless View, Surrounded by Greenery, F&B with Lake Frontage',
+     // description: 'Priceless View, Surrounded by Greenery, F&B with Lake Frontage',
     },
     Government: {
       image: Government,
-      description: 'Smart Community, Sustainable Development',
+     // description: 'Smart Community, Sustainable Development',
     },
   };
 
