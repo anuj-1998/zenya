@@ -48,9 +48,8 @@ function App() {
             ))}
             <li key="register">
               <a
-                href="https://m-zenya.com.my/#register"
+                href="#register"
                 className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold bg-[#dcbba4] hover:bg-[#be946d] text-[#1f3441] shadow ml-2 transition"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
@@ -116,13 +115,13 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="flex-1">
+            {/* <div className="flex-1">
               <img
                 src="https://ext.same-assets.com/1549166357/2517988317.png"
                 alt="M Zenya Pool Render"
                 className="w-full rounded-lg shadow-2xl object-contain"
               />
-            </div>
+            </div> */}
           </section>
         </Element>
         {/* Features & Facility Tiles */}
