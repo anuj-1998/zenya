@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../src/assets/logo.png';
 import homepage from '../src/assets/homepage.jpg';
 import { Link, Element } from 'react-scroll';
+import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import ProjectsSection from "./ProjectsSection";
 
 const menuLinks = [
   { label: "HOME", to: "home" },
@@ -106,7 +108,7 @@ function App() {
           <section className="w-full px-4 py-12 bg-transparent flex flex-col lg:flex-row items-center max-w-6xl mx-auto gap-12">
             <div className="flex-1 lg:pr-8">
               <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-4 tracking-tighter">
-                Perched between vibrancy and serenity
+                About us
               </h2>
               <div className="bg-[#dcbba4]/20 rounded-lg p-6 text-lg max-w-xl shadow-sm mb-3">
                 <p>
@@ -126,90 +128,7 @@ function App() {
         {/* Features & Facility Tiles */}
         <Element name="projects">
           <section className="w-full py-10 px-4 bg-[#fff8f2] relative">
-            <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6">
-              {/* Tile 1 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/1916657042.png"
-                  alt="Accessibility"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">
-                  Excellent Accessibility to Highways and MRT
-                </span>
-              </div>
-              {/* Tile 2 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/1653454076.png"
-                  alt="View"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">
-                  Priceless view of crystalline lake and park
-                </span>
-              </div>
-              {/* Tile 3 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/1335953297.png"
-                  alt="Greenery"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">
-                  Surrounded by Greenery
-                </span>
-              </div>
-              {/* Tile 4 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/1457041475.png"
-                  alt="Security"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">Multi-tier Security</span>
-              </div>
-              {/* Tile 5 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/1234361292.png"
-                  alt="EV Charging"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">EV Charging Stations</span>
-              </div>
-              {/* Tile 6 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/4107301636.png"
-                  alt="Waste Collection"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">
-                  Automated Waste Collection System
-                </span>
-              </div>
-              {/* Tile 7 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/1058367503.png"
-                  alt="Shops"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">
-                  Shops &amp; F&amp;B with Lake Frontage
-                </span>
-              </div>
-              {/* Tile 8 */}
-              <div className="flex flex-col items-center justify-center">
-                <img
-                  src="https://ext.same-assets.com/1549166357/589207322.png"
-                  alt="Smart Community"
-                  className="h-14 mb-3"
-                />
-                <span className="text-center text-sm font-semibold">Smart Community</span>
-              </div>
-            </div>
+           <ProjectsSection />
           </section>
         </Element>
         <Element name="gallery">
@@ -275,7 +194,7 @@ function App() {
                     className="accent-[#1f3441]"
                   />
                   <label htmlFor="agree" className="text-xs text-[#6b4a3b]">
-                    I hereby consent to Mah Sing Group contacting me.{" "}
+                   Please accept{" "}
                     <a href="#" className="underline">
                       Terms & Conditions
                     </a>
@@ -310,54 +229,22 @@ function App() {
                 hwangll@samling.com.my
               </a>
             </div>
-            <div className="flex items-center gap-x-7">
-              <a
-                href="https://www.facebook.com/mahsing/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://ext.same-assets.com/1549166357/3942360046.png"
-                  alt="Facebook"
-                  className="h-8"
-                />
+            <div className="flex items-center gap-x-7 text-gray-600 text-2xl">
+              <a href="https://www.facebook.com/mahsing/" target="_blank" rel="noopener noreferrer">
+                <FaFacebookF />
               </a>
-              <a
-                href="https://www.instagram.com/mahsinggroup/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://ext.same-assets.com/1549166357/3942360046.png"
-                  alt="Instagram"
-                  className="h-8 opacity-50"
-                />
+              <a href="https://www.instagram.com/mahsinggroup/?hl=en" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
               </a>
-              <a
-                href="https://www.youtube.com/user/MahSingGroup"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://ext.same-assets.com/1549166357/3942360046.png"
-                  alt="YouTube"
-                  className="h-8 opacity-70"
-                />
+              <a href="https://www.youtube.com/user/MahSingGroup" target="_blank" rel="noopener noreferrer">
+                <FaYoutube />
               </a>
-              <a
-                href="https://www.linkedin.com/company/mah-sing-group-berhad"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://ext.same-assets.com/1549166357/3942360046.png"
-                  alt="LinkedIn"
-                  className="h-8 opacity-40"
-                />
+              <a href="https://www.linkedin.com/company/mah-sing-group-berhad" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn />
               </a>
             </div>
           </div>
-          <div className="max-w-5xl mx-auto pt-6 mt-8 border-t border-slate-700 text-xs text-[#dcbba4]">
+          {/* <div className="max-w-5xl mx-auto pt-6 mt-8 border-t border-slate-700 text-xs text-[#dcbba4]">
             Star Residence Sdn. Bhd. (200601006511(726260-D)) (A wholly-owned
             subsidiary of Mah Sing Group Berhad) | Wisma Mah Sing, Penthouse Suite
             1, No. 163 Jalan Sungai Besi, 57100 Kuala Lumpur. | Tel: +603 9221 6888
@@ -376,11 +263,11 @@ function App() {
             leased or mortgaged without any consent from the Land Committee of
             Kuala Lumpur, Federal Territory | Land Encumbrance: RHB BANK BERHAD | This
             advertisement has been approved by National Housing Department.
-          </div>
+          </div> */}
         </footer>
       </main>
       {/* BOTTOM BANNER: Mah Sing Homeownership-Season Promotional */}
-      <a
+      {/* <a
         href="https://mahsing.com.my/season/"
         target="_blank"
         rel="noopener noreferrer"
@@ -393,7 +280,7 @@ function App() {
           alt="Homeownership-Season-Desktop-Banner"
           style={{ borderRadius: 0, boxShadow: "0 0 24px 0 #0003" }}
         />
-      </a>
+      </a> */}
     </>
   );
 }
