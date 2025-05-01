@@ -135,9 +135,6 @@ function App() {
         </Element>
         {/* Registration Form & Award */}
         <Element name='contact'>
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight m-4">
-            Contact us
-          </h2>
           <section className="py-16 px-4 bg-[#e0eaea] flex flex-col md:flex-row items-start justify-center gap-16">
             {/* <div className="bg-[#1f3441] text-white rounded-lg shadow-lg p-8 flex flex-col items-center min-w-[340px] max-w-[400px] w-full">
             <img
@@ -149,6 +146,9 @@ function App() {
               M Zenya has been awarded Bronze Provisional GreenRE Certification
             </span>
           </div> */}
+            <h2 className="text-3xl md:text-5xl font-bold leading-tight ml-4 mt-4">
+              Contact us
+            </h2>
             <form
               id="register"
               className="flex-1 min-w-[320px] max-w-lg w-full bg-[#fff3e3] rounded-lg shadow-xl p-8"
