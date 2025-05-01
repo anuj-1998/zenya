@@ -2,21 +2,33 @@ import React, { useState } from 'react';
 import Residential from '../src/assets/residential.jpeg';
 import Commercial from '../src/assets/commercial.jpeg';
 import Government from '../src/assets/government.jpeg';
-const ProjectsSection = () => {
-  const [activeCard, setActiveCard] = useState(null);
 
-  const cardData = {
+type CardKey = 'Commercial' | 'Residential' | 'Government';
+
+type CardInfo = {
+  image: string;
+  description?: string;
+};
+
+type ActiveCard = {
+  title: CardKey;
+} & CardInfo;
+
+const ProjectsSection: React.FC = () => {
+  const [activeCard, setActiveCard] = useState<ActiveCard | null>(null);
+
+  const cardData: Record<CardKey, CardInfo> = {
     Commercial: {
       image: Commercial,
-      // description: 'EV Charging Stations, Automated Waste Collection',
+      description: 'EV Charging Stations, Automated Waste Collection',
     },
     Residential: {
       image: Residential,
-      // description: 'Priceless View, Surrounded by Greenery, F&B with Lake Frontage',
+      description: 'Priceless View, Surrounded by Greenery, F&B with Lake Frontage',
     },
     Government: {
       image: Government,
-      // description: 'Smart Community, Sustainable Development',
+      description: 'Smart Community, Sustainable Development',
     },
   };
 
@@ -30,11 +42,15 @@ const ProjectsSection = () => {
           <div
             key={key}
             className="bg-white rounded-xl shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition"
-            onClick={() => setActiveCard({ title: key, ...value })}
+            onClick={() =>
+              setActiveCard({ title: key as CardKey, ...value })
+            }
           >
             <img src={value.image} alt={key} className="h-48 w-full object-cover" />
             <div className="p-4 text-center">
-              <h3 className="text-2xl md:text-3xl font-bold leading-tight mb-4 tracking-tighter">{key}</h3>
+              <h3 className="text-2xl md:text-3xl font-bold leading-tight mb-4 tracking-tighter">
+                {key}
+              </h3>
             </div>
           </div>
         ))}
@@ -51,7 +67,11 @@ const ProjectsSection = () => {
               &times;
             </button>
             <h3 className="text-2xl font-bold mb-4">{activeCard.title}</h3>
-            <img src={activeCard.image} alt={activeCard.title} className="w-full h-48 object-cover rounded mb-4" />
+            <img
+              src={activeCard.image}
+              alt={activeCard.title}
+              className="w-full h-48 object-cover rounded mb-4"
+            />
             <p className="text-gray-700">{activeCard.description}</p>
           </div>
         </div>
