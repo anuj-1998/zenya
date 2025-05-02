@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { FiChevronLeft, FiChevronRight, FiX } from 'react-icons/fi';
 
 // Import your images - adjust paths according to your actual file structure
-import BBT1 from "../src/assets/Gallery1/BBT1.jpg";
-import BBT2 from "../src/assets/Gallery1/BBT2.jpg";
-import BBT3 from "../src/assets/Gallery1/BBT3.jpg";
+import BBT1 from "../src/assets/Gallery1/bbt.jpg";
+import BBT2 from "../src/assets/Gallery1/bbt2.jpg";
+import BBT3 from "../src/assets/Gallery1/bbt3.jpg";
 
 interface GalleryItem {
   id: number;
