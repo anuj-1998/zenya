@@ -108,9 +108,9 @@ function App() {
                   </div>
                 </section>
               </Element>
-              {/* <Element name="gallery">
+              <Element name="gallery">
               <GalleryGrid />
-              </Element> */}
+              </Element>
               {/* Registration Form & Award */}
               <Element name='contact'>
                 <section className="py-16 px-4 bg-[#e0eaea] flex flex-col md:flex-row items-start justify-center gap-16">
