@@ -9,7 +9,7 @@ interface GalleryItem {
   description: string;
   images: string[];
 }
-
+//comment
 const GalleryGrid = () => {
   const [currentItemIndex, setCurrentItemIndex] = useState<number>(0);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
