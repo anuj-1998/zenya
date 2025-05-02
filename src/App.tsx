@@ -20,7 +20,7 @@ const menuLinks = [
   { label: "HOME", to: "home" },
   { label: "ABOUT US", to: "about" },
   { label: "PROJECTS", to: "projects" },
-  { label: "GALLERY", to: "gallery" },
+  // { label: "GALLERY", to: "gallery" },
   { label: "CONTACT US", to: "contact" },
 ];
 
@@ -109,7 +109,7 @@ function App() {
                 </section>
               </Element>
               <Element name="gallery">
-              <GalleryGrid />
+                {/* <Carousel /> */}
               </Element>
               {/* Registration Form & Award */}
               <Element name='contact'>

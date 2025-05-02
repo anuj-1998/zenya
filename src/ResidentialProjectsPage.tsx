@@ -30,17 +30,13 @@ const ResidentialProjectsPage = () => {
             <h1 className="text-4xl font-bold text-center mb-12">Residential Projects</h1>
             <div className="max-w-6xl mx-auto space-y-16">
                 {residentialProjects.map((project, index) => (
-                    <div
-                        key={index}
-                        className={`flex flex-col md:flex-row ${project.reverse ? "md:flex-row-reverse" : ""
-                            } items-center gap-8`}
-                    >
+                    <div key={index} className="flex flex-col items-center gap-8">
                         <img
                             src={project.image}
                             alt={`Residential Project ${index + 1}`}
-                            className="w-full md:w-1/2 rounded-lg shadow-lg"
+                            className="w-[500px] max-w-full rounded-lg shadow-lg"
                         />
-                        <div className="md:w-1/2">
+                        <div className="w-full max-w-[500px] text-center">
                             <h6 className="text-2xl font-bold mb-4">{project.title}</h6>
                             <p className="text-lg">{project.text}</p>
                         </div>
@@ -48,6 +44,7 @@ const ResidentialProjectsPage = () => {
                 ))}
             </div>
         </div>
+
     );
 };
 
