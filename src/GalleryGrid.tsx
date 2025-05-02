@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FiChevronLeft, FiChevronRight, FiX } from 'react-icons/fi';
 
-// Import your images - adjust paths according to your actual file structure
 import BBT1 from "../src/assets/bbt.jpg";
 import BBT2 from "../src/assets/bbt2.jpg";
 import BBT3 from "../src/assets/bbt3.jpg";
