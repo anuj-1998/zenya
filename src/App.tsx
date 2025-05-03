@@ -4,7 +4,6 @@ import CommercialProjectsPage from "./CommercialProjectsPage";
 import ResidentialProjectsPage from "./ResidentialProjectsPage";
 import GovernmentProjectsPage from "./GovernmentProjectsPage";
 import "./index.css";
-import Carousel from "./Carousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../src/assets/logo.png';
 import homepage from '../src/assets/homepage.jpg';
@@ -13,14 +12,12 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/f
 import ProjectsSection from "./ProjectsSection";
 import Navbar from "./Navbar";
 import aboutusbg from '../src/assets/aboutus_bg.jpeg';
-import GalleryGrid from "./GalleryGrid";
-
-
+import ImageGallery from "./ImageGallery";
 const menuLinks = [
   { label: "HOME", to: "home" },
   { label: "ABOUT US", to: "about" },
   { label: "PROJECTS", to: "projects" },
-  // { label: "GALLERY", to: "gallery" },
+  { label: "GALLERY", to: "gallery" },
   { label: "CONTACT US", to: "contact" },
 ];
 
@@ -30,33 +27,22 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            {/* Top Nav Bar */}
-            <section>
-              <section>
-                <Navbar menuLinks={menuLinks} logo={logo} />
-              </section>
-            </section>
+            <Navbar menuLinks={menuLinks} logo={logo} />
             <main className="min-h-screen w-full bg-gradient-to-b from-[#fff3e3] to-[#e0eaea] font-sans overflow-x-hidden text-[#1f3441]">
               {/* Hero Section */}
               <Element name="home">
                 <section className="w-full relative flex items-center justify-center min-h-[35rem] bg-gradient-to-b from-[#f0e1d6] via-[#fff3e3] to-[#f2f5f6]">
                   <img
-                    src={logo}
-                    alt="M Zenya Logo"
-                    className="absolute left-8 top-8 h-20 z-10 drop-shadow"
-                  />
-                  <img
                     src={homepage}
                     alt="Hero Building Render"
                     className="relative z-10 w-[38rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
-                    style={{ marginTop: "3rem" }}
                   />
-                  <a
+                  {/* <a
                     href="#register"
                     className="absolute right-8 top-12 bg-[#be946d] text-white px-6 py-2 rounded-full font-bold shadow hover:bg-[#8d6b3e] transition"
                   >
                     REGISTER NOW
-                  </a>
+                  </a> */}
                   {/* Decorative Patterns */}
                   <img
                     src="https://ext.same-assets.com/1549166357/2419435022.png"
@@ -109,7 +95,10 @@ function App() {
                 </section>
               </Element>
               <Element name="gallery">
-                {/* <Carousel /> */}
+                <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-10 text-center tracking-tighter">
+                  Gallery
+                </h2>
+                <ImageGallery />
               </Element>
               {/* Registration Form & Award */}
               <Element name='contact'>
@@ -199,7 +188,7 @@ function App() {
                       hwangll@samling.com.my
                     </a>
                   </div>
-                  <div className="flex items-center gap-x-7 text-gray-600 text-2xl">
+                  {/* <div className="flex items-center gap-x-7 text-gray-600 text-2xl">
                     <a href="https://www.facebook.com/mahsing/" target="_blank" rel="noopener noreferrer">
                       <FaFacebookF />
                     </a>
@@ -212,7 +201,7 @@ function App() {
                     <a href="https://www.linkedin.com/company/mah-sing-group-berhad" target="_blank" rel="noopener noreferrer">
                       <FaLinkedinIn />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 {/* <div className="max-w-5xl mx-auto pt-6 mt-8 border-t border-slate-700 text-xs text-[#dcbba4]">
                 Star Residence Sdn. Bhd. (200601006511(726260-D)) (A wholly-owned
