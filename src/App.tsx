@@ -34,7 +34,7 @@ function App() {
                   <img
                     src={homepage}
                     alt="Hero Building Render"
-                    className="relative z-10 w-[44rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
+                    className="relative z-10 w-[50rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
                   />
                   {/* <a
                     href="#register"
@@ -48,11 +48,11 @@ function App() {
                     alt="Curve1"
                     className="absolute left-2 top-32 h-24 opacity-70"
                   />
-                  <img
+                  {/* <img
                     src="https://ext.same-assets.com/1549166357/3497995044.png"
                     alt="Cycling"
                     className="absolute bottom-[-25px] left-24 h-32 w-auto"
-                  />
+                  /> */}
                   <img
                     src="https://ext.same-assets.com/1549166357/1232797557.png"
                     alt="Curve2"

@@ -115,7 +115,7 @@ const projects = [
   },
   {
     image: commercial18,
-    title: 'Commerce Square Mall.',
+    title: 'Commerce Square Mall',
     text: "",
     reverse: false,
   },
