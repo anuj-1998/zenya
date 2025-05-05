@@ -180,7 +180,7 @@ const governmentProjects = [
 
 const GovernmentProjectsPage = () => {
     return (
-        <div className="min-h-screen bg-[#f7f3ef] p-8">
+        <div className="min-h-screen bg-[#f7f3ef] p-8" style={{ textAlign: 'justify' }}>
             <h1 className="text-4xl font-bold text-center mb-12">Government Projects</h1>
             <div className="max-w-6xl mx-auto space-y-16">
                 {governmentProjects.map((project, index) => (
@@ -191,8 +191,8 @@ const GovernmentProjectsPage = () => {
                             className="w-[500px] max-w-full rounded-lg shadow-lg"
                         />
                         <div className="w-full max-w-[500px] text-center">
-                            <h6 className="text-2xl font-bold mb-4">{project.title}</h6>
-                            <p className="text-lg">{project.text}</p>
+                            <h6 className="text-2xl font-bold mb-4" style={{ textAlign: 'justify' }}>{project.title}</h6>
+                            <p className="text-lg" style={{ textAlign: 'justify' }}>{project.text}</p>
                         </div>
                     </div>
                 ))}

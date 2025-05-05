@@ -133,7 +133,7 @@ const ImageGallery: React.FC = () => {
   };
 
   return (
-    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 " style={{ paddingTop: '60px', paddingBottom: '50px', paddingLeft: '20px', paddingRight: '20px' }}>
+    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 " style={{ paddingTop: '0px', paddingBottom: '50px', paddingLeft: '20px', paddingRight: '20px' }}>
       {Object.entries(images).map(([label, imageList]) => (
         <div
           key={label}
@@ -151,7 +151,7 @@ const ImageGallery: React.FC = () => {
       ))}
 
       {showCarousel && activeCategory && (
-   <div className="fixed inset-0 bg-transparent bg-black bg-opacity-30 backdrop-blur z-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-transparent bg-black bg-opacity-30 backdrop-blur z-50 flex items-center justify-center">
           <div className="relative w-11/12 md:w-2/3 lg:w-1/2 bg-white rounded-lg p-4">
             <button
               className="absolute top-2 right-1 text-gray-800 z-50"

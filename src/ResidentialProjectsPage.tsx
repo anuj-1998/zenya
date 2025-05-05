@@ -7,7 +7,7 @@ const residentialProjects = [
     {
         image: residential26,
         title: '',
-        text: "Residential project undertaken is the Santuary Villa project. Developed in 1997, the project was completed in 2 years which consists of 32 units of detached houses & 142 units of semi-detached which is 100% sold.",
+        text: "Residential project undertaken is the Sanctuary Villa project. Developed in 1997, the project was completed in 2 years which consists of 32 units of detached houses & 142 units of semi-detached which is 100% sold.",
         reverse: false,
     },
     {
@@ -36,9 +36,9 @@ const ResidentialProjectsPage = () => {
                             alt={`Residential Project ${index + 1}`}
                             className="w-[500px] max-w-full rounded-lg shadow-lg"
                         />
-                        <div className="w-full max-w-[500px] text-center">
-                            <h6 className="text-2xl font-bold mb-4">{project.title}</h6>
-                            <p className="text-lg">{project.text}</p>
+                        <div className="w-full max-w-[500px] text-center" >
+                            <h6 className="text-2xl font-bold mb-4" style={{ textAlign: 'justify' }}>{project.title}</h6>
+                            <p className="text-lg" style={{ textAlign: 'justify' }}>{project.text}</p>
                         </div>
                     </div>
                 ))}

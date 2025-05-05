@@ -20,14 +20,13 @@ const menuLinks = [
   { label: "GALLERY", to: "gallery" },
   { label: "CONTACT US", to: "contact" },
 ];
-
 function App() {
   return (
     <Router>
+      <Navbar menuLinks={menuLinks} logo={logo} />
       <Routes>
         <Route path="/" element={
           <>
-            <Navbar menuLinks={menuLinks} logo={logo} />
             <main className="min-h-screen w-full bg-gradient-to-b from-[#fff3e3] to-[#e0eaea] font-sans overflow-x-hidden text-[#1f3441]">
               {/* Hero Section */}
               <Element name="home">
@@ -35,7 +34,7 @@ function App() {
                   <img
                     src={homepage}
                     alt="Hero Building Render"
-                    className="relative z-10 w-[38rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
+                    className="relative z-10 w-[44rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
                   />
                   {/* <a
                     href="#register"
@@ -78,7 +77,7 @@ function App() {
                       About us
                     </h2>
                     <div className="bg-[#dcbba4]/20 rounded-lg p-6 text-lg max-w-xl shadow-sm mb-3">
-                      <p>
+                      <p style={{ color: '#fff' }}>
                         Sarawak Land (Kemena Park) Sdn Bhd (“Sarawak Land”), the property arm of the Samling Strategic Corporation Sdn. Bhd. was incorporated in Malaysia on 14 May 1993.{" "}
                         <strong>Sarawak Land (Kemena Park)</strong> Sdn Bhd has undertaken numerous developments in Bintulu Town Development which covers Commercial, Residential, and Government Projects.
                       </p>
@@ -162,7 +161,7 @@ function App() {
                       </div>
                     </div>
                     <button className="mt-5 w-full py-2 bg-[#1f3441] hover:bg-[#3facb6] text-white font-bold rounded shadow transition">
-                      SUBMIT
+                      SUBMIT INQUIRY
                     </button>
                   </form>
                 </section>

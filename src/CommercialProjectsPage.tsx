@@ -25,7 +25,7 @@ import commercial25 from "../src/assets/project_images/25.jpeg";
 const projects = [
   {
     image: commercial3,
-    title: '',
+    title: 'An Aerial View of The Park City Commercial Centre',
     text: "Parkcity Commerce Square Phase I consists 96 units of 3-storey shop offices. The project was launched in 1994 and completed in 1996 and is 100% sold.",
     reverse: false,
   },
@@ -169,21 +169,17 @@ const CommercialProjectsPage = () => {
       <h1 className="text-4xl font-bold text-center mb-12">Commercial Projects</h1>
       <div className="max-w-6xl mx-auto space-y-16">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center gap-8"
-          >
+          <div key={index} className="flex flex-col items-center gap-8">
             <img
               src={project.image}
-              alt={`Commercial Project ${index + 1}`}
-              className="w-[500px] rounded-lg shadow-lg"
+              alt={`Residential Project ${index + 1}`}
+              className="w-[500px] max-w-full rounded-lg shadow-lg"
             />
-            <div className="w-full">
-              <h6 className="text-2xl font-bold mb-4">{project.title}</h6>
-              <p className="text-lg">{project.text}</p>
+            <div className="w-full max-w-[500px] text-center" >
+              <h6 className="text-2xl font-bold mb-4" style={{ textAlign: 'justify' }}>{project.title}</h6>
+              <p className="text-lg" style={{ textAlign: 'justify' }}>{project.text}</p>
             </div>
           </div>
-
         ))}
       </div>
     </div>

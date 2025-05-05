@@ -14,11 +14,25 @@ type NavbarProps = {
 const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Check if we're on the root domain and not a subpath
+  const shouldRedirectToHome = () => {
+    return window.location.pathname !== '/';
+  };
+
+  // Handle link click, check the condition to redirect to home
+  const handleLinkClick = () => {
+    if (shouldRedirectToHome()) {
+      window.location.href = '/';
+    }
+    setIsOpen(false);
+  };
+
   return (
     <nav
       className="w-full sticky top-0 z-30 shadow-sm border-b border-[#eee] backdrop-blur"
       style={{
-        background: 'linear-gradient(90deg, rgba(17, 42, 64, 1) 10%, rgba(17, 42, 64, 1) 30%, rgba(205, 129, 106, 1) 100%)',
+        background:
+          'linear-gradient(90deg, rgba(17, 42, 64, 1) 10%, rgba(17, 42, 64, 1) 30%, rgba(205, 129, 106, 1) 100%)',
       }}
     >
       <div className="max-w-7xl h-20 mx-auto flex items-center justify-between px-4 gap-8">
@@ -40,9 +54,19 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
             viewBox="0 0 24 24"
           >
             {isOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
@@ -55,6 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
                 to={link.to}
                 smooth
                 duration={100}
+                onClick={handleLinkClick}
                 className="cursor-pointer text-white font-semibold text-sm xl:text-base px-2 py-1 rounded hover:text-black hover:bg-[#f7e6d5] transition"
               >
                 {link.label}
@@ -64,15 +89,22 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
           <li key="register">
             <a
               href="#register"
+              onClick={(e) => {
+                if (shouldRedirectToHome()) {
+                  e.preventDefault();
+                  window.location.href = '/';
+                }
+                setIsOpen(false);
+              }}
               className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold bg-[#dcbba4] hover:bg-[#be946d] text-[#1f3441] shadow ml-2 transition"
               rel="noopener noreferrer"
             >
-              <img
+              {/* <img
                 src="https://ext.same-assets.com/1549166357/2999530113.png"
                 className="h-6"
                 alt="register now"
-              />
-              REGISTER
+              /> */}
+               Submit Inquiries
             </a>
           </li>
         </ul>
@@ -88,7 +120,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
                   to={link.to}
                   smooth
                   duration={100}
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleLinkClick}
                   className="block text-white font-semibold text-sm px-3 py-2 rounded hover:bg-[#f7e6d5] hover:text-black transition"
                 >
                   {link.label}
@@ -98,15 +130,21 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
             <li key="register">
               <a
                 href="#register"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  if (shouldRedirectToHome()) {
+                    e.preventDefault();
+                    window.location.href = '/';
+                  }
+                  setIsOpen(false);
+                }}
                 className="inline-flex items-center gap-1 px-3 py-2 rounded-full font-bold bg-[#dcbba4] hover:bg-[#be946d] text-[#1f3441] shadow transition"
               >
-                <img
+                {/* <img
                   src="https://ext.same-assets.com/1549166357/2999530113.png"
                   className="h-6"
                   alt="register now"
-                />
-                REGISTER
+                /> */}
+                Submit Inquiries
               </a>
             </li>
           </ul>
