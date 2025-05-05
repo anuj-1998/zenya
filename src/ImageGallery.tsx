@@ -66,7 +66,6 @@ import bw2 from '../src/assets/bintulu-waterfront-hotel/bw2.jpeg';
 import bw3 from '../src/assets/bintulu-waterfront-hotel/bw3.jpeg';
 import bw4 from '../src/assets/bintulu-waterfront-hotel/bw4.jpeg';
 
-
 import bwp2 from '../src/assets/bintulu-waterfront-promenade/BWP2.jpg';
 import bwp3 from '../src/assets/bintulu-waterfront-promenade/BWP3.jpg';
 import bwp6 from '../src/assets/bintulu-waterfront-promenade/BWP6.jpg';
