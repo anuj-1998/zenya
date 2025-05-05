@@ -114,7 +114,6 @@ import bbt1 from '../src/assets/bintulu-malaysia-bus-terminal/BBT1.jpg';
 import bbt2 from '../src/assets/bintulu-malaysia-bus-terminal/BBT2.jpeg';
 import bbt3 from '../src/assets/bintulu-malaysia-bus-terminal/BBT3.jpeg';
 
-
 import pier1 from '../src/assets/pier/pier1.jpeg';
 import pier2 from '../src/assets/pier/pier2.jpeg';
 import pier3 from '../src/assets/pier/pier3.jpeg';
