@@ -122,6 +122,7 @@ import pier4 from '../src/assets/pier/pier4.jpeg';
 import pier5 from '../src/assets/pier/pier5.jpeg';
 import pier6 from '../src/assets/pier/pier6.jpeg';
 
+//deploy
 
 const pecImages = [
   pec1, pec2, pec3, pec4, pec5,
