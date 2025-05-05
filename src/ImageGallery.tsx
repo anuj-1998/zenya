@@ -109,9 +109,9 @@ import pec32 from '../src/assets/bintulu-parkcity-everly-hotel/PEC32.webp';
 import pec33 from '../src/assets/bintulu-parkcity-everly-hotel/PEC33.jpg';
 import pec35 from '../src/assets/bintulu-parkcity-everly-hotel/PEC35.jpg';
 
-import bbt1 from '../src/assets/bintulu-malaysia-bus-terminal/BBT1.jpg';
-import bbt2 from '../src/assets/bintulu-malaysia-bus-terminal/BBT2.jpeg';
-import bbt3 from '../src/assets/bintulu-malaysia-bus-terminal/BBT3.jpeg';
+import bbt1 from '../src/assets/bintulu-malaysia bus-terminal/BBT1.jpg';
+import bbt2 from '../src/assets/bintulu-malaysia bus-terminal/BBT2.jpeg';
+import bbt3 from '../src/assets/bintulu-malaysia bus-terminal/BBT3.jpeg';
 
 import pier1 from '../src/assets/pier/pier1.jpeg';
 import pier2 from '../src/assets/pier/pier2.jpeg';
@@ -155,7 +155,7 @@ const bwpImages = [
 ];
 
 const bbtImages = [
-  bbt1
+  bbt1,bbt2,bbt3
 ]
 
 const pierImages = [
