@@ -72,7 +72,6 @@ import bwp6 from '../src/assets/bintulu-waterfront-promenade/BWP6.jpg';
 import bwp7 from '../src/assets/bintulu-waterfront-promenade/BWP7.jpg';
 import bwp8 from '../src/assets/bintulu-waterfront-promenade/BWP8.jpg';
 import bwp9 from '../src/assets/bintulu-waterfront-promenade/BWP9.jpg';
-import bwp11 from '../src/assets/bintulu-waterfront-promenade/BWP11.jpg';
 import bwp12 from '../src/assets/bintulu-waterfront-promenade/BWP12.jpg';
 import bwp13 from '../src/assets/bintulu-waterfront-promenade/BWP13.jpg';
 import bwp14 from '../src/assets/bintulu-waterfront-promenade/BWP14.jpg';
@@ -111,8 +110,8 @@ import pec33 from '../src/assets/bintulu-parkcity-everly-hotel/PEC33.jpg';
 import pec35 from '../src/assets/bintulu-parkcity-everly-hotel/PEC35.jpg';
 
 import bbt1 from '../src/assets/bintulu-malaysia-bus-terminal/BBT1.jpg';
-// import bbt2 from '../src/assets/bintulu-malaysia-bus-terminal/BBT2.jpeg';
-// import bbt3 from '../src/assets/bintulu-malaysia-bus-terminal/BBT3.jpeg';
+import bbt2 from '../src/assets/bintulu-malaysia-bus-terminal/BBT2.jpeg';
+import bbt3 from '../src/assets/bintulu-malaysia-bus-terminal/BBT3.jpeg';
 
 import pier1 from '../src/assets/pier/pier1.jpeg';
 import pier2 from '../src/assets/pier/pier2.jpeg';
@@ -152,7 +151,7 @@ const bwImages = [
 const bwpImages = [
   bwp2, bwp3,
   bwp6, bwp7, bwp8, bwp9,
-  bwp11, bwp12, bwp13, bwp14, bwp15
+  bwp12, bwp13, bwp14, bwp15
 ];
 
 const bbtImages = [
