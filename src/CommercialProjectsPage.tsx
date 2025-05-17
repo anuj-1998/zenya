@@ -134,7 +134,7 @@ const projects = [
   {
     image: commercial21,
     title: 'The Spring Bintulu',
-    text: "Right on the other site next to the existing Everly Hotel, it is a 2-storey shopping mall. The project size is approximately 4.009ha. / 9.906 ac. tHe Spring, being the first lifestyle mall in Bintulu, has the capacity to house 127 shopping outlets spread out over two floors. It also offers a seafront esplanade for major mall events, a food court with 686 seats and a vantage point which offers a panoramic view of the South China Sea from the alfresco area.",
+    text: "Right on the other site next to the existing Everly Hotel, it is a 2-storey shopping mall. The project size is approximately 4.009ha. / 9.906 ac. The Spring, being the first lifestyle mall in Bintulu, has the capacity to house 127 shopping outlets spread out over two floors. It also offers a seafront esplanade for major mall events, a food court with 686 seats and a vantage point which offers a panoramic view of the South China Sea from the alfresco area.",
     reverse: false,
   },
   {

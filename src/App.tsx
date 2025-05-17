@@ -30,38 +30,16 @@ function App() {
             <main className="min-h-screen w-full bg-gradient-to-b from-[#fff3e3] to-[#e0eaea] font-sans overflow-x-hidden text-[#1f3441]">
               {/* Hero Section */}
               <Element name="home">
-                <section className="w-full relative flex items-center justify-center min-h-[35rem] bg-gradient-to-b from-[#f0e1d6] via-[#fff3e3] to-[#f2f5f6]">
+                <section className="w-full relative flex items-center justify-center min-h-[36rem] bg-gradient-to-b from-[#f0e1d6] via-[#fff3e3] to-[#f2f5f6]">
                   <img
                     src={homepage}
                     alt="Hero Building Render"
                     className="relative z-10 w-[50rem] max-w-full object-contain shadow-2xl rounded-b-3xl"
                   />
-                  {/* <a
-                    href="#register"
-                    className="absolute right-8 top-12 bg-[#be946d] text-white px-6 py-2 rounded-full font-bold shadow hover:bg-[#8d6b3e] transition"
-                  >
-                    REGISTER NOW
-                  </a> */}
-                  {/* Decorative Patterns */}
-                  <img
-                    src="https://ext.same-assets.com/1549166357/2419435022.png"
-                    alt="Curve1"
-                    className="absolute left-2 top-32 h-24 opacity-70"
-                  />
-                  {/* <img
-                    src="https://ext.same-assets.com/1549166357/3497995044.png"
-                    alt="Cycling"
-                    className="absolute bottom-[-25px] left-24 h-32 w-auto"
-                  /> */}
-                  <img
-                    src="https://ext.same-assets.com/1549166357/1232797557.png"
-                    alt="Curve2"
-                    className="absolute right-16 bottom-0 h-28 opacity-50"
-                  />
                 </section>
               </Element>
               {/* Perched Between Vibrancy and Serenity Section */}
-              <Element name="about">
+              <Element name="about" style={{ padding: '4%' }}>
                 <section className="w-full px-4 py-12 relative flex flex-col lg:flex-row items-center max-w-6xl mx-auto gap-12 overflow-hidden">
                   {/* Background Image */}
                   <div
@@ -79,21 +57,21 @@ function App() {
                     <div className="bg-[#dcbba4]/20 rounded-lg p-6 text-lg max-w-xl shadow-sm mb-3">
                       <p style={{ color: '#fff' }}>
                         Sarawak Land (Kemena Park) Sdn Bhd (“Sarawak Land”), the property arm of the Samling Strategic Corporation Sdn. Bhd. was incorporated in Malaysia on 14 May 1993.{" "}
-                        <strong>Sarawak Land (Kemena Park)</strong> Sdn Bhd has undertaken numerous developments in Bintulu Town Development which covers Commercial, Residential, and Government Projects.
+                        <strong>Sarawak Land (Kemena Park)</strong> Sdn Bhd has undertaken numerous developments across Sarawak which covers Commercial, Residential, and Government Projects.
                       </p>
                     </div>
                   </div>
                 </section>
               </Element>
               {/* Features & Facility Tiles */}
-              <Element name="projects">
+              <Element name="projects" style={{ padding: '4% 0px 0px 4%' }}>
                 <section className="relative w-full py-10 px-4 overflow-hidden">
                   <div className="relative z-10 bg-[#fff8f2]/80 backdrop-blur-sm rounded-xl p-4">
                     <ProjectsSection />
                   </div>
                 </section>
               </Element>
-              <Element name="gallery">
+              <Element name="gallery" style={{ paddingTop: '10%' }}>
                 <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-10 text-center tracking-tighter">
                   Gallery
                 </h2>

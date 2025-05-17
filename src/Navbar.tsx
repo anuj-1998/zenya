@@ -37,8 +37,9 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
     >
       <div className="max-w-7xl h-20 mx-auto flex items-center justify-between px-4 gap-8">
         {/* Logo */}
-        <a href="/">
+        <a href="/" style={{ display: 'flex', textDecoration: 'none' }}>
           <img src={logo} alt="Menu Logo M-Zenya" className="h-14" />
+          <p style={{ color: '#fff', padding: '17px 0px 0px 15px', fontSize: '20px', fontWeight: '700' }}>Sarawak Land</p>
         </a>
 
         {/* Hamburger Menu Toggle */}
@@ -104,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
                 className="h-6"
                 alt="register now"
               /> */}
-               Submit Inquiries
+              Submit Inquiries
             </a>
           </li>
         </ul>
