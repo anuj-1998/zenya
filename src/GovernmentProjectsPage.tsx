@@ -184,7 +184,7 @@ const GovernmentProjectsPage = () => {
             <h1 className="text-4xl font-bold text-center mb-12">Government Projects</h1>
             <div className="max-w-6xl mx-auto space-y-16">
                 {governmentProjects.map((project, index) => (
-                    <div key={index} className="flex flex-col items-center gap-8">
+                    <div key={index} className="flex flex-col items-center gap-8" style={{ boxShadow: '0 2px 3px -1px rgba(0, 0, 0, 0.1)' }}>
                         <img
                             src={project.image}
                             alt={`Government Project ${index + 1}`}
