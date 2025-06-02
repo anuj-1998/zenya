@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import government29 from "../src/assets/project_images/29.jpeg";
 import government30 from "../src/assets/project_images/30.jpeg";
 import government31 from "../src/assets/project_images/31.jpeg";
@@ -23,6 +24,7 @@ import government51 from "../src/assets/project_images/51.jpeg";
 import government52 from "../src/assets/project_images/52.jpeg";
 import government53 from "../src/assets/project_images/53.jpeg";
 import government54 from "../src/assets/project_images/54.jpeg";
+import { useEffect } from "react";
 
 // Example government project data
 const governmentProjects = [
@@ -179,6 +181,10 @@ const governmentProjects = [
 ];
 
 const GovernmentProjectsPage = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <div className="min-h-screen bg-[#f7f3ef] p-8" style={{ textAlign: 'justify' }}>
             <h1 className="text-4xl font-bold text-center mb-12">Government Projects</h1>

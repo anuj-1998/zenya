@@ -1,6 +1,8 @@
+import { useLocation } from "react-router-dom";
 import residential26 from "../src/assets/project_images/26.jpeg";
 import residential28 from "../src/assets/project_images/28.jpeg";
 import blinton from "../src/assets/project_images/blinton.jpg";
+import { useEffect } from "react";
 
 
 // Example residential project data
@@ -39,6 +41,10 @@ const residentialProjects = [
 ];
 
 const ResidentialProjectsPage = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <div className="min-h-screen bg-[#f7f3ef] p-8">
             <h1 className="text-4xl font-bold text-center mb-12">Residential Projects</h1>

@@ -37,6 +37,8 @@ import residential104 from "../src/assets/project_images/104.jpg";
 import residential105 from "../src/assets/project_images/105.jpg";
 import residential106 from "../src/assets/project_images/green_hotel_1.jpeg";
 import residential107 from "../src/assets/project_images/green_hotel_2.jpg";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const projects = [
   {
@@ -278,6 +280,11 @@ const projects = [
 ];
 
 const CommercialProjectsPage = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="min-h-screen bg-[#f7f3ef] p-8">
       <h1 className="text-4xl font-bold text-center mb-12">Commercial Projects</h1>
