@@ -29,7 +29,7 @@ const governmentProjects = [
     {
         image: government29,
         title: "1-Malaysia Bus Terminal",
-        text: "This Design, Construction and completion of 2-storey bus terminal cum food court project is a Turkey Project approved by Bintulu Development Authority “BDA”. The building is completed in June, 2009 and handed over to BDA in March, 2010.",
+        text: "The design, construction, and completion of this 2-storey bus terminal cum food court project was approved by the Bintulu Development Authority “BDA”. The building was completed in June 2009 and handed over to BDA in March 2010.",
         reverse: false,
     },
     {
@@ -41,7 +41,7 @@ const governmentProjects = [
     {
         image: government31,
         title: "Miri Marina Land Reclaimation",
-        text: "Mr Troy Yaw’s has contributed tremendously to the uplifting of Miri city towards a Resort city through the development of Miri Marina City which is a 550 acres of reclaimed land. This development included Shop buildings (250 units) in Marina Phase 1, and Phase 2 The Marina Lagoon Land, and the Miri Public Central park and The iconic Seahorse landmark.",
+        text: "",
         reverse: true,
     },
     {
@@ -58,8 +58,8 @@ const governmentProjects = [
     },
     {
         image: government35,
-        title: "",
-        text: "",
+        title: "Bintulu Waterfront Promenade",
+        text: "The latest attraction to Bintulu is this 120-acre Bintulu Waterfront Promenade, the state's longest waterfront attraction similar to the one in Kuching. It is situated near the delta of Kemena River and the Parkcity Everly Hotel. The Waterfront Development Master Plan involved the partial reclamation of river bank, turning it into a 2.5km stretch of public waterfront feature. The Bintulu Waterfront Promenade's landscaped space is conducive to a variety of outdoor activities. The waterfront promenade is ideal for strolling, running, skate-boarding, photography and more. The project commenced in June 2005, and was duly completed in March 2010.",
         reverse: false,
     },
     {

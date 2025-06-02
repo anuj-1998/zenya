@@ -35,6 +35,8 @@ import residential102 from "../src/assets/project_images/102.jpg";
 import residential103 from "../src/assets/project_images/103.jpeg";
 import residential104 from "../src/assets/project_images/104.jpg";
 import residential105 from "../src/assets/project_images/105.jpg";
+import residential106 from "../src/assets/project_images/green_hotel_1.jpeg";
+import residential107 from "../src/assets/project_images/green_hotel_2.jpg";
 
 const projects = [
   {
@@ -258,6 +260,18 @@ const projects = [
     image: residential105,
     title: '',
     text: "",
+    reverse: false,
+  },
+  {
+    image: residential107,
+    title: 'Greens Hotel & Suites',
+    text: "Greens Hotel & Suites was built with 2 towers of 6-story suites, located in the city centre at Bintulu Commerce Square with rooms offering accommodation with an on-site restaurant and just a 10-minute walk away from Parkcity Shopping Mall in Bintulu. Furthermore, Tanjung Batu Beach and Taman Tumbina Park are both less than 5 km from the property.",
+    reverse: false,
+  },
+  {
+    image: residential106,
+    title: '',
+    text: "Every room at this hotel is air conditioned and features a flat-screen TV with satellite channels. Certain units feature a seating area for your convenience. The rooms have views of the sea and city. The rooms also come with a private bathroom with a bath. Conveniently located amongst plenty of eateries and coffee shops, this property is just a 5-minute walk from Park City Shopping Mall. The Jungle Trekking Area Bintulu attraction is only located 4.6 km away. ",
     reverse: false,
   },
 
