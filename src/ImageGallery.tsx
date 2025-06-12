@@ -120,6 +120,67 @@ import pier4 from '../src/assets/pier/pier4.jpeg';
 import pier5 from '../src/assets/pier/pier5.jpeg';
 import pier6 from '../src/assets/pier/pier6.jpeg';
 
+
+import miri1 from "../src/assets/Miri ParkCity Everly Hotel/ParkCity Hotel Miri (main).jpeg"
+import miri2 from "../src/assets/Miri ParkCity Everly Hotel/PC Hotel Miri 2.jpeg"
+import miri3 from "../src/assets/Miri ParkCity Everly Hotel/PC Hotel Miri .jpeg"
+
+
+// import marina1 from "../src/assets/Marina yacht club miri /Marina Yacht Club 2 (main).jpeg"
+// import marina2 from "../src/assets/Marina yacht club miri /Yacht Club Miri.jpeg"
+// import marina3 from "../src/assets/Marina yacht club miri /Marina_Bay_Miri.jpg"
+// import marina4 from "../src/assets/Marina yacht club miri /Marina Yacht Club Miri.jpeg"
+// import marina5 from "../src/assets/Marina yacht club miri /Marina Yacht Club .jpeg"
+// import marina6 from "../src/assets/Marina yacht club miri /1280px-Boats_at_Marina_Bay,_Miri,_Sarawak.jpg"
+// import marina7 from "../src/assets/Marina yacht club miri /1i61o2215bfnd9l0w1576_W_400_0_R5_Q90.jpg"
+
+import ghs1 from "../src/assets/Greens Hotel & Suites/98359922 (main).jpg"
+import ghs2 from "../src/assets/Greens Hotel & Suites/unnamed-6.webp"
+import ghs3 from "../src/assets/Greens Hotel & Suites/unnamed-4.webp"
+import ghs4 from "../src/assets/Greens Hotel & Suites/unnamed-3.webp"
+import ghs5 from "../src/assets/Greens Hotel & Suites/unnamed-2.webp"
+import ghs6 from "../src/assets/Greens Hotel & Suites/unnamed-1.webp"
+import ghs7 from "../src/assets/Greens Hotel & Suites/100710869.jpg"
+import ghs8 from "../src/assets/Greens Hotel & Suites/1579075_17051516250052996106.jpg"
+import ghs9 from "../src/assets/Greens Hotel & Suites/1579075_17051516200052996017.jpg"
+import ghs10 from "../src/assets/Greens Hotel & Suites/1579075_16101013380047578156.jpg"
+import ghs11 from "../src/assets/Greens Hotel & Suites/1579075_16101013350047578083.jpg"
+import ghs12 from "../src/assets/Greens Hotel & Suites/1579075_16101013350047578077.jpg"
+import ghs13 from "../src/assets/Greens Hotel & Suites/15717fa9990a6557e87a81166e8a8f0b.jpeg"
+import ghs14 from "../src/assets/Greens Hotel & Suites/035b72fab01d3811fa4081ece4929105.jpeg"
+
+
+import evgc1 from "../src/assets/Eastwood Valley Golf Club/Eastwood (main).webp"
+import evgc2 from "../src/assets/Eastwood Valley Golf Club/unnamed.webp"
+import evgc3 from "../src/assets/Eastwood Valley Golf Club/pikaso_text-to-image_Candid-image-photography-natural-textures-highly-r (2).jpeg"
+import evgc4 from "../src/assets/Eastwood Valley Golf Club/Lobby 3.png"
+import evgc5 from "../src/assets/Eastwood Valley Golf Club/HMS-2021-GA V1_edited.jpg"
+import evgc6 from "../src/assets/Eastwood Valley Golf Club/download.webp"
+import evgc7 from "../src/assets/Eastwood Valley Golf Club/88981441.jpg"
+import evgc8 from "../src/assets/Eastwood Valley Golf Club/2290059.jpg"
+import evgc9 from "../src/assets/Eastwood Valley Golf Club/169070_15082513060034999108.jpg"
+import evgc10 from "../src/assets/Eastwood Valley Golf Club/169070_15082513060034999107.jpg"
+import evgc11 from "../src/assets/Eastwood Valley Golf Club/105.jpg"
+import evgc12 from "../src/assets/Eastwood Valley Golf Club/69f805368c7827aecedae7db94439a0b.jpeg"
+import evgc13 from "../src/assets/Eastwood Valley Golf Club/53ba984a474dbb0513bc5dd31af40042.jpeg"
+import evgc14 from "../src/assets/Eastwood Valley Golf Club/_MG_9979_JPG.jpg"
+
+import coco1 from "../src/assets/Coco Cabana/Coco Cabana/discover.jpg"
+import coco2 from "../src/assets/Coco Cabana/Coco Cabana/k3iv8xe9ief31.jpg"
+import coco3 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604825645.jpg"
+import coco4 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604815077.jpg"
+import coco5 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604811107.jpg"
+import coco6 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604803257.jpg"
+import coco7 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604795878.jpg"
+// import coco8 from "../src/assets/Coco Cabana/Coco Cabana /FB_IMG_1746604815077.jpg"
+import coco9 from "../src/assets/Coco Cabana/Coco Cabana/cococabana2.jpg"
+import coco10 from "../src/assets/Coco Cabana/Coco Cabana/Coco Cabana Miri.jpeg"
+
+import brigh1 from "../src/assets/Brighton Condominiums/ec59b3654959b0715099f0e05f3f0743 (main).jpg"
+import brigh2 from "../src/assets/Brighton Condominiums/fe53779dcf39e44627d35736ad0b1cdb.jpg"
+import brigh3 from "../src/assets/Brighton Condominiums/Brighton.webp"
+import brigh4 from "../src/assets/Brighton Condominiums/98445da4e46d8559d5dcf390b672fa12.jpg"
+
 //deploy
 
 const pecImages = [
@@ -155,14 +216,36 @@ const bwpImages = [
 ];
 
 const bbtImages = [
-  bbt1,bbt2,bbt3
+  bbt1, bbt2, bbt3
 ]
 
 const pierImages = [
   pier1, pier2, pier3, pier4, pier5, pier6
 ]
 
+const miriImages = [
+  miri1, miri2, miri3
+]
 
+// const marinaImages = [
+//   marina1, marina2, marina3, marina4, marina5, marina6, marina7
+// ]
+
+// const ghsImages = [
+//   ghs1, ghs2, ghs3, ghs4, ghs5, ghs6, ghs7, ghs8, ghs9, ghs10, ghs11, ghs12, ghs13, ghs14
+// ]
+
+const evgcImages = [
+  evgc1, evgc2, evgc3, evgc4, evgc5, evgc6, evgc7, evgc8, evgc9, evgc10, evgc11, evgc12, evgc13, evgc14
+]
+
+const cocoImages = [
+  coco1, coco2, coco3, coco4, coco5, coco6, coco7, coco9, coco10
+]
+
+const brighImages = [
+  brigh1, brigh2, brigh3, brigh4
+]
 // Use more accurate typing
 const images: Record<string, string[]> = {
   'Bintulu Commerce Square Mall': csmImages,
@@ -173,6 +256,12 @@ const images: Record<string, string[]> = {
   'Bintulu Parkcity Everly Hotel': pecImages,
   'Bintulu 1-Malaysia Bus Terminal': bbtImages,
   'Pier 99': pierImages,
+  'Miri ParkCity Everly Hotel': miriImages,
+  // 'Marina Yacht Club Miri': marinaImages,
+  // 'Greens Hotel & Suites': ghsImages,
+  'Eastwood Valley Golf Club': evgcImages,
+  'Coco Cabana': cocoImages,
+  'Brighton Condominiums': brighImages
 };
 
 // Properly type arrow props

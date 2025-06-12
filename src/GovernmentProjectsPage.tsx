@@ -9,7 +9,8 @@ import government36 from "../src/assets/project_images/36.jpeg";
 import government37 from "../src/assets/project_images/37.jpeg";
 import government38 from "../src/assets/project_images/38.jpeg";
 import government39 from "../src/assets/project_images/39.jpeg";
-import government40 from "../src/assets/project_images/40.jpeg";
+import government40a from "../src/assets/project_images/40.a.jpg";
+import government40b from "../src/assets/project_images/40.b.jpg"
 import government41 from "../src/assets/project_images/41.jpeg";
 import government42 from "../src/assets/project_images/42.jpeg";
 import government43 from "../src/assets/project_images/43.jpeg";
@@ -33,150 +34,183 @@ const governmentProjects = [
         title: "1-Malaysia Bus Terminal",
         text: "The design, construction, and completion of this 2-storey bus terminal cum food court project was approved by the Bintulu Development Authority “BDA”. The building was completed in June 2009 and handed over to BDA in March 2010.",
         reverse: false,
+        border:false
     },
     {
         image: government30,
-        title: "Bintulu Waterfront Promenade",
-        text: "The latest attraction to Bintulu is this 120-acre Bintulu Waterfront Promenade, the state's longest waterfront attraction similar to the one in Kuching. It is situated near the delta of Kemena River and the Parkcity Everly Hotel. The Waterfront Development Master Plan involved the partial reclamation of river bank, turning it into a 2.5km stretch of public waterfront feature. The Bintulu Waterfront Promenade's landscaped space is conducive to a variety of outdoor activities. The waterfront promenade is ideal for strolling, running, skate- boarding, photography and more. The project commenced in June 2005, and was duly completed in March 2010.",
-        reverse: false,
-    },
-    {
-        image: government31,
-        title: "Miri Marina Land Reclaimation",
-        text: "",
-        reverse: true,
-    },
-    {
-        image: government32,
         title: "",
-        text: "",
+        text:"",
         reverse: false,
-    },
-    {
-        image: government33,
-        title: "",
-        text: "",
-        reverse: false,
+        border:true
     },
     {
         image: government35,
         title: "Bintulu Waterfront Promenade",
         text: "The latest attraction to Bintulu is this 120-acre Bintulu Waterfront Promenade, the state's longest waterfront attraction similar to the one in Kuching. It is situated near the delta of Kemena River and the Parkcity Everly Hotel. The Waterfront Development Master Plan involved the partial reclamation of river bank, turning it into a 2.5km stretch of public waterfront feature. The Bintulu Waterfront Promenade's landscaped space is conducive to a variety of outdoor activities. The waterfront promenade is ideal for strolling, running, skate-boarding, photography and more. The project commenced in June 2005, and was duly completed in March 2010.",
         reverse: false,
+        border:false
+    },
+    {
+        image: government31,
+        title: "",
+        text: "",
+        reverse: true,
+        border:false
+    },
+    {
+        image: government32,
+        title: "",
+        text: "",
+        reverse: false,
+        border:false
+    },
+    {
+        image: government33,
+        title: "",
+        text: "",
+        reverse: false,
+        border:false
     },
     {
         image: government36,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government37,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government38,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government39,
         title: "",
         text: "",
         reverse: false,
+        border:true
     },
     {
-        image: government40,
+        image: government40a,
+        title: "Miri Marina Land Reclamation",
+        text: "Mr. Troy Yaw has contributed tremendously to the uplifting of Miri city towards it becoming a resort city through the development of Miri Marina City. This ‘City’ is built upon 550 acres of reclaimed land. This development included Shop buildings (250 units) in Marina Phase 1 and 2, The Marina Lagoon Land, the Miri Public Central Park and the iconic Seahorse landmark.",
+        reverse: false,
+        border:false
+    },
+    {
+
+        image: government40b,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government41,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government42,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government43,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government44,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government45,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government46,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government47,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government48,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government49,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government50,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government51,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government52,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government53,
         title: "",
         text: "",
         reverse: false,
+        border:false
     },
     {
         image: government54,
         title: "",
         text: "",
         reverse: false,
+        border:true
     },
 ];
 
@@ -190,7 +224,9 @@ const GovernmentProjectsPage = () => {
             <h1 className="text-4xl font-bold text-center mb-12">Government Projects</h1>
             <div className="max-w-6xl mx-auto space-y-16">
                 {governmentProjects.map((project, index) => (
-                    <div key={index} className="flex flex-col items-center gap-8" style={{ boxShadow: '0 2px 3px -1px rgba(0, 0, 0, 0.1)' }}>
+                    <div key={index} className="flex flex-col items-center gap-8" 
+                     style={{ boxShadow: `${project.border?"0 2px 3px -1px rgba(0, 0, 0, 0.1)":"none"}` }}
+                    >
                         <img
                             src={project.image}
                             alt={`Government Project ${index + 1}`}
