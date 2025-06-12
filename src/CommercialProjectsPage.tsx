@@ -163,7 +163,7 @@ const projects = [
   {
     image: commercial20,
     title: 'Bintulu Waterfront Hotel (Ongoing Project)',
-    text: "Words change to: The 7-storey hotel with 186 guest rooms and 1 penthouse is located next to Bintulu Waterfront Promenade and the megamall The Spring Bintulu.",
+    text: "The 7-storey hotel with 186 guest rooms and 1 penthouse is located next to Bintulu Waterfront Promenade and the megamall The Spring Bintulu.",
     reverse: false,
     border:true
   },
