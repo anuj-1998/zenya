@@ -8,10 +8,12 @@ import {
 } from '@heroicons/react/24/solid';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import sb1 from '../src/assets/the-spring-bintulu/SB1.jpg';
-import sb2 from '../src/assets/the-spring-bintulu/SB2.jpg';
-import sb3 from '../src/assets/the-spring-bintulu/SB3.jpg';
-import sb4 from '../src/assets/the-spring-bintulu/SB4.jpg';
+
+import sb1 from '../src/assets/the-spring-bintulu/SB main photo.jpg'
+import sb2 from '../src/assets/the-spring-bintulu/SB1.jpg';
+import sb3 from '../src/assets/the-spring-bintulu/SB2.jpg';
+import sb4 from '../src/assets/the-spring-bintulu/SB3.jpg';
+import sb5 from '../src/assets/the-spring-bintulu/SB4.jpg';
 import sb6 from '../src/assets/the-spring-bintulu/SB6.jpg';
 import sb7 from '../src/assets/the-spring-bintulu/SB7.jpg';
 import sb8 from '../src/assets/the-spring-bintulu/SB8.jpg';
@@ -26,22 +28,23 @@ import sb17 from '../src/assets/the-spring-bintulu/SB17.jpg';
 import sb18 from '../src/assets/the-spring-bintulu/SB18.jpg';
 
 
-import csm1 from '../src/assets/bintulu-commerce-square-mall/CSM1.jpg';
-import csm2 from '../src/assets/bintulu-commerce-square-mall/CSM2.jpg';
-import csm3 from '../src/assets/bintulu-commerce-square-mall/CSM3.jpg';
-import csm4 from '../src/assets/bintulu-commerce-square-mall/CSM4.jpg';
-import csm5 from '../src/assets/bintulu-commerce-square-mall/CSM5.jpg';
-import csm6 from '../src/assets/bintulu-commerce-square-mall/CSM6.jpg';
-import csm7 from '../src/assets/bintulu-commerce-square-mall/CSM7.jpg';
-import csm8 from '../src/assets/bintulu-commerce-square-mall/CSM8.jpg';
-import csm9 from '../src/assets/bintulu-commerce-square-mall/CSM9.jpg';
-import csm10 from '../src/assets/bintulu-commerce-square-mall/CSM10.jpg';
-import csm11 from '../src/assets/bintulu-commerce-square-mall/CSM11.jpg';
-import csm12 from '../src/assets/bintulu-commerce-square-mall/CSM12.jpg';
-import csm13 from '../src/assets/bintulu-commerce-square-mall/CSM13.jpg';
-import csm14 from '../src/assets/bintulu-commerce-square-mall/CSM14.jpg';
-import csm15 from '../src/assets/bintulu-commerce-square-mall/CSM15.jpg';
-import csm16 from '../src/assets/bintulu-commerce-square-mall/CSM16.jpg';
+import csm1 from '../src/assets/bintulu-commerce-square-mall/CSM main photo.jpeg'
+import csm2 from '../src/assets/bintulu-commerce-square-mall/CSM1.jpg';
+import csm3 from '../src/assets/bintulu-commerce-square-mall/CSM2.jpg';
+import csm4 from '../src/assets/bintulu-commerce-square-mall/CSM3.jpg';
+import csm5 from '../src/assets/bintulu-commerce-square-mall/CSM4.jpg';
+import csm6 from '../src/assets/bintulu-commerce-square-mall/CSM5.jpg';
+import csm7 from '../src/assets/bintulu-commerce-square-mall/CSM6.jpg';
+import csm8 from '../src/assets/bintulu-commerce-square-mall/CSM7.jpg';
+import csm9 from '../src/assets/bintulu-commerce-square-mall/CSM8.jpg';
+import csm10 from '../src/assets/bintulu-commerce-square-mall/CSM9.jpg';
+import csm11 from '../src/assets/bintulu-commerce-square-mall/CSM10.jpg';
+import csm12 from '../src/assets/bintulu-commerce-square-mall/CSM11.jpg';
+import csm13 from '../src/assets/bintulu-commerce-square-mall/CSM12.jpg';
+import csm14 from '../src/assets/bintulu-commerce-square-mall/CSM13.jpg';
+import csm15 from '../src/assets/bintulu-commerce-square-mall/CSM14.jpg';
+import csm16 from '../src/assets/bintulu-commerce-square-mall/CSM15.jpg';
+import csm17 from '../src/assets/bintulu-commerce-square-mall/CSM16.jpg';
 import csm18 from '../src/assets/bintulu-commerce-square-mall/CSM18.jpg';
 import csm19 from '../src/assets/bintulu-commerce-square-mall/CSM19.jpg';
 import csm20 from '../src/assets/bintulu-commerce-square-mall/CSM20.jpg';
@@ -53,19 +56,32 @@ import csm26 from '../src/assets/bintulu-commerce-square-mall/CSM26.jpg';
 import csm27 from '../src/assets/bintulu-commerce-square-mall/CSM27.jpg';
 import csm28 from '../src/assets/bintulu-commerce-square-mall/CSM28.jpg';
 import csm29 from '../src/assets/bintulu-commerce-square-mall/CSM29.jpg';
+import csm32 from '../src/assets/bintulu-commerce-square-mall/CSM32.webp'
 
-import mlc1 from '../src/assets/miri-marina-land/MLC1.jpg';
-import mlc2 from '../src/assets/miri-marina-land/MLC2.jpg';
-import mlc3 from '../src/assets/miri-marina-land/MLC3.jpg';
-import mlc4 from '../src/assets/miri-marina-land/MLC4.jpg';
+import mlc1 from '../src/assets/miri-marina-land/MLC Main Photo.jpg'
+import mlc2 from '../src/assets/miri-marina-land/MLC1.jpg';
+import mlc3 from '../src/assets/miri-marina-land/MLC2.jpg';
+import mlc4 from '../src/assets/miri-marina-land/MLC3.jpg';
+import mlc5 from '../src/assets/miri-marina-land/MLC4.jpg';
 import mlc6 from '../src/assets/miri-marina-land/MLC6.jpg';
 import mlc7 from '../src/assets/miri-marina-land/MLC7.jpg';
+import mlc8 from '../src/assets/miri-marina-land/MLC8.jpg'
+import mlc9 from '../src/assets/miri-marina-land/MLC9.jpg';
+import mlc10 from '../src/assets/miri-marina-land/MLC10.jpg';
+import mlc11 from '../src/assets/miri-marina-land/MLC11.jpg';
+import mlc12 from '../src/assets/miri-marina-land/MLC12.jpg'; 
+import mlc13 from '../src/assets/miri-marina-land/MLC13.jpg';
+import mlc14 from '../src/assets/miri-marina-land/MLC14.jpg';
 
 import bw1 from '../src/assets/bintulu-waterfront-hotel/bw1.jpeg';
 import bw2 from '../src/assets/bintulu-waterfront-hotel/bw2.jpeg';
 import bw3 from '../src/assets/bintulu-waterfront-hotel/bw3.jpeg';
 import bw4 from '../src/assets/bintulu-waterfront-hotel/bw4.jpeg';
+import bw5 from '../src/assets/bintulu-waterfront-hotel/bw5.jpeg';
+import bw6 from '../src/assets/bintulu-waterfront-hotel/bw6.jpeg';
 
+
+import bwp1 from '../src/assets/bintulu-waterfront-promenade/BWP Main photo.jpg'
 import bwp2 from '../src/assets/bintulu-waterfront-promenade/BWP2.jpg';
 import bwp3 from '../src/assets/bintulu-waterfront-promenade/BWP3.jpg';
 import bwp6 from '../src/assets/bintulu-waterfront-promenade/BWP6.jpg';
@@ -77,18 +93,19 @@ import bwp13 from '../src/assets/bintulu-waterfront-promenade/BWP13.jpg';
 import bwp14 from '../src/assets/bintulu-waterfront-promenade/BWP14.jpg';
 import bwp15 from '../src/assets/bintulu-waterfront-promenade/BWP15.jpg';
 
-import pec1 from '../src/assets/bintulu-parkcity-everly-hotel/PEC1.jpg';
-import pec2 from '../src/assets/bintulu-parkcity-everly-hotel/PEC2.jpg';
-import pec3 from '../src/assets/bintulu-parkcity-everly-hotel/PEC3.webp';
-import pec4 from '../src/assets/bintulu-parkcity-everly-hotel/PEC4.webp';
-import pec5 from '../src/assets/bintulu-parkcity-everly-hotel/PEC5.jpg';
-import pec6 from '../src/assets/bintulu-parkcity-everly-hotel/PEC6.webp';
-import pec7 from '../src/assets/bintulu-parkcity-everly-hotel/PEC7.webp';
-import pec8 from '../src/assets/bintulu-parkcity-everly-hotel/PEC8.webp';
-import pec9 from '../src/assets/bintulu-parkcity-everly-hotel/PEC9.webp';
-import pec10 from '../src/assets/bintulu-parkcity-everly-hotel/PEC10.webp';
-import pec11 from '../src/assets/bintulu-parkcity-everly-hotel/PEC11.webp';
-import pec12 from '../src/assets/bintulu-parkcity-everly-hotel/PEC12.jpg';
+import pec1 from "../src/assets/bintulu-parkcity-everly-hotel/PEC main photo.jpg"
+import pec2 from '../src/assets/bintulu-parkcity-everly-hotel/PEC1.jpg';
+import pec3 from '../src/assets/bintulu-parkcity-everly-hotel/PEC2.jpg';
+import pec4 from '../src/assets/bintulu-parkcity-everly-hotel/PEC3.webp';
+import pec5 from '../src/assets/bintulu-parkcity-everly-hotel/PEC4.webp';
+import pec6 from '../src/assets/bintulu-parkcity-everly-hotel/PEC5.jpg';
+import pec7 from '../src/assets/bintulu-parkcity-everly-hotel/PEC6.webp';
+import pec8 from '../src/assets/bintulu-parkcity-everly-hotel/PEC7.webp';
+import pec9 from '../src/assets/bintulu-parkcity-everly-hotel/PEC8.webp';
+import pec10 from '../src/assets/bintulu-parkcity-everly-hotel/PEC9.webp';
+import pec11 from '../src/assets/bintulu-parkcity-everly-hotel/PEC10.webp';
+import pec12 from '../src/assets/bintulu-parkcity-everly-hotel/PEC11.webp';
+import pec13 from '../src/assets/bintulu-parkcity-everly-hotel/PEC12.jpg';
 import pec14 from '../src/assets/bintulu-parkcity-everly-hotel/PEC14.jpg';
 import pec15 from '../src/assets/bintulu-parkcity-everly-hotel/PEC15.jpg';
 import pec16 from '../src/assets/bintulu-parkcity-everly-hotel/PEC16.webp';
@@ -113,12 +130,19 @@ import bbt1 from '../src/assets/bintulu-malaysia bus-terminal/BBT1.jpg';
 import bbt2 from '../src/assets/bintulu-malaysia bus-terminal/BBT2.jpeg';
 import bbt3 from '../src/assets/bintulu-malaysia bus-terminal/BBT3.jpeg';
 
-import pier1 from '../src/assets/pier/pier1.jpeg';
-import pier2 from '../src/assets/pier/pier2.jpeg';
-import pier3 from '../src/assets/pier/pier3.jpeg';
-import pier4 from '../src/assets/pier/pier4.jpeg';
-import pier5 from '../src/assets/pier/pier5.jpeg';
-import pier6 from '../src/assets/pier/pier6.jpeg';
+import pier1 from "../src/assets/pier/P99 main photo.jpeg"
+import pier2 from '../src/assets/pier/pier1.jpeg';
+import pier3 from '../src/assets/pier/pier2.jpeg';
+import pier4 from '../src/assets/pier/pier3.jpeg';
+import pier5 from '../src/assets/pier/pier4.jpeg';
+import pier6 from '../src/assets/pier/pier5.jpeg';
+import pier7 from '../src/assets/pier/pier6.jpeg';
+import pier8 from '../src/assets/pier/pier7.jpeg';
+import pier9 from '../src/assets/pier/pier8.jpg';
+import pier10 from '../src/assets/pier/pier9.jpg';
+import pier11 from '../src/assets/pier/pier10.jpeg';
+import pier12 from '../src/assets/pier/pier11.jpeg';
+import pier13 from '../src/assets/pier/pier12.jpg';
 
 
 import miri1 from "../src/assets/Miri ParkCity Everly Hotel/ParkCity Hotel Miri (main).jpeg"
@@ -126,13 +150,13 @@ import miri2 from "../src/assets/Miri ParkCity Everly Hotel/PC Hotel Miri 2.jpeg
 import miri3 from "../src/assets/Miri ParkCity Everly Hotel/PC Hotel Miri .jpeg"
 
 
-// import marina1 from "../src/assets/Marina yacht club miri /Marina Yacht Club 2 (main).jpeg"
-// import marina2 from "../src/assets/Marina yacht club miri /Yacht Club Miri.jpeg"
-// import marina3 from "../src/assets/Marina yacht club miri /Marina_Bay_Miri.jpg"
-// import marina4 from "../src/assets/Marina yacht club miri /Marina Yacht Club Miri.jpeg"
-// import marina5 from "../src/assets/Marina yacht club miri /Marina Yacht Club .jpeg"
-// import marina6 from "../src/assets/Marina yacht club miri /1280px-Boats_at_Marina_Bay,_Miri,_Sarawak.jpg"
-// import marina7 from "../src/assets/Marina yacht club miri /1i61o2215bfnd9l0w1576_W_400_0_R5_Q90.jpg"
+import marina1 from "../src/assets/Marina yacht club miri/Marina Yacht Club 2 (main).jpeg"
+import marina2 from "../src/assets/Marina yacht club miri/Yacht Club Miri.jpeg"
+import marina3 from "../src/assets/Marina yacht club miri/Marina_Bay_Miri.jpg"
+import marina4 from "../src/assets/Marina yacht club miri/Marina Yacht Club Miri.jpeg"
+import marina5 from "../src/assets/Marina yacht club miri/Marina Yacht Club .jpeg"
+import marina6 from "../src/assets/Marina yacht club miri/1280px-Boats_at_Marina_Bay,_Miri,_Sarawak.jpg"
+import marina7 from "../src/assets/Marina yacht club miri/1i61o2215bfnd9l0w1576_W_400_0_R5_Q90.jpg"
 
 import ghs1 from "../src/assets/Greens Hotel & Suites/98359922 (main).jpg"
 import ghs2 from "../src/assets/Greens Hotel & Suites/unnamed-6.webp"
@@ -165,7 +189,7 @@ import evgc12 from "../src/assets/Eastwood Valley Golf Club/69f805368c7827aeceda
 import evgc13 from "../src/assets/Eastwood Valley Golf Club/53ba984a474dbb0513bc5dd31af40042.jpeg"
 import evgc14 from "../src/assets/Eastwood Valley Golf Club/_MG_9979_JPG.jpg"
 
-import coco1 from "../src/assets/Coco Cabana/Coco Cabana/discover.jpg"
+import coco1 from "../src/assets/Coco Cabana/Coco Cabana/discover-miri-sarawak-malaysia-1920x1080 (main).jpg"
 import coco2 from "../src/assets/Coco Cabana/Coco Cabana/k3iv8xe9ief31.jpg"
 import coco3 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604825645.jpg"
 import coco4 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604815077.jpg"
@@ -186,7 +210,7 @@ import brigh4 from "../src/assets/Brighton Condominiums/98445da4e46d8559d5dcf390
 const pecImages = [
   pec1, pec2, pec3, pec4, pec5,
   pec6, pec7, pec8, pec9, pec10,
-  pec11, pec12, pec14, pec15,
+  pec11, pec12,pec13, pec14, pec15,
   pec16, pec17, pec19, pec20,
   pec21, pec22, pec23, pec24, pec25,
   pec26, pec27, pec28, pec30,
@@ -194,57 +218,58 @@ const pecImages = [
 ];
 
 
-const mlcImages = [mlc1, mlc2, mlc3, mlc4, mlc6, mlc7];
+const mlcImages = [mlc1, mlc2, mlc3, mlc4,mlc5, mlc6, mlc7,mlc8, mlc9, mlc10, mlc11, mlc12, mlc13, mlc14];
 
 const csmImages = [
   csm1, csm2, csm3, csm4, csm5, csm6, csm7, csm8, csm9, csm10,
-  csm11, csm12, csm13, csm14, csm15, csm16, csm18, csm19, csm20,
-  csm21, csm22, csm24, csm25, csm26, csm27, csm28, csm29,
+  csm11, csm12, csm13, csm14, csm15, csm16, csm17, csm18, csm19, csm20,
+  csm21, csm22, csm24, csm25, csm26, csm27, csm28, csm29, csm32
 ];
 
 const sbImages = [
-  sb1, sb2, sb3, sb4, sb6, sb7, sb8, sb9,
+  sb1, sb2, sb3, sb4,sb5, sb6, sb7, sb8, sb9,
   sb10, sb11, sb13, sb14, sb15, sb16, sb17, sb18
 ];
 const bwImages = [
-  bw1, bw2, bw3, bw4
+  bw1, bw2, bw3, bw4 ,bw5 ,bw6
 ];
 const bwpImages = [
-  bwp2, bwp3,
+  bwp1,bwp2, bwp3,
   bwp6, bwp7, bwp8, bwp9,
   bwp12, bwp13, bwp14, bwp15
 ];
 
 const bbtImages = [
-  bbt1, bbt2, bbt3
+  bbt1,bbt2,bbt3
 ]
 
 const pierImages = [
-  pier1, pier2, pier3, pier4, pier5, pier6
+  pier1, pier2, pier3, pier4, pier5, pier6,pier7,
+  pier8, pier9, pier10, pier11, pier12,pier13
 ]
 
 const miriImages = [
-  miri1, miri2, miri3
+  miri1,miri2,miri3
 ]
 
-// const marinaImages = [
-//   marina1, marina2, marina3, marina4, marina5, marina6, marina7
-// ]
+const marinaImages = [
+  marina1,marina2,marina3,marina4,marina5,marina6,marina7
+]
 
-// const ghsImages = [
-//   ghs1, ghs2, ghs3, ghs4, ghs5, ghs6, ghs7, ghs8, ghs9, ghs10, ghs11, ghs12, ghs13, ghs14
-// ]
+const ghsImages = [
+  ghs1,ghs2,ghs3,ghs4,ghs5,ghs6,ghs7,ghs8,ghs9,ghs10,ghs11,ghs12,ghs13,ghs14
+]
 
 const evgcImages = [
-  evgc1, evgc2, evgc3, evgc4, evgc5, evgc6, evgc7, evgc8, evgc9, evgc10, evgc11, evgc12, evgc13, evgc14
+  evgc1,evgc2,evgc3,evgc4,evgc5,evgc6,evgc7,evgc8,evgc9,evgc10,evgc11,evgc12,evgc13,evgc14
 ]
 
 const cocoImages = [
-  coco1, coco2, coco3, coco4, coco5, coco6, coco7, coco9, coco10
+  coco1,coco2,coco3,coco4,coco5,coco6,coco7,coco9,coco10
 ]
 
 const brighImages = [
-  brigh1, brigh2, brigh3, brigh4
+  brigh1,brigh2,brigh3,brigh4
 ]
 // Use more accurate typing
 const images: Record<string, string[]> = {
@@ -256,9 +281,9 @@ const images: Record<string, string[]> = {
   'Bintulu Parkcity Everly Hotel': pecImages,
   'Bintulu 1-Malaysia Bus Terminal': bbtImages,
   'Pier 99': pierImages,
-  'Miri ParkCity Everly Hotel': miriImages,
-  // 'Marina Yacht Club Miri': marinaImages,
-  // 'Greens Hotel & Suites': ghsImages,
+  'Miri ParkCity Everly Hotel':miriImages,
+  'Marina Yacht Club Miri': marinaImages,
+  'Greens Hotel & Suites': ghsImages,
   'Eastwood Valley Golf Club': evgcImages,
   'Coco Cabana': cocoImages,
   'Brighton Condominiums': brighImages

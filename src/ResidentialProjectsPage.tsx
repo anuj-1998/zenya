@@ -3,9 +3,6 @@ import residential26 from "../src/assets/project_images/26.jpeg";
 import residential28 from "../src/assets/project_images/28.jpeg";
 import blinton from "../src/assets/project_images/blinton.jpg";
 import { useEffect } from "react";
-
-
-// Example residential project data
 const residentialProjects = [
     {
         image: residential26,
@@ -16,7 +13,7 @@ const residentialProjects = [
     {
         image: residential28,
         title:
-            "The 27-storey condominium – The Pinnacle consists of 86 units of residential unit with a total land size of 3.80 acres while 27-storey service apartment consists of 168 units of residential units and 7 units of commercial space with a total land size of approximately 3.50 acres. (Ongoing project)",
+            "27-storey Strata Titled Condominium (The Pinnacle) and 27-storey Strata Titled Service Apartment (Ongoing Project)",
         text: `
       <p>The Pinnacle condominium presents spectacular panoramic views of South China Sea and Bintulu town centre as the condominium is one of the two tallest residential blocks in the whole of Sarawak. Visually contemporary and upscale, the 27-Storey Pinnacleoffers an integrated lifestyle in an exclusive residential haven.</p>
       <br>
