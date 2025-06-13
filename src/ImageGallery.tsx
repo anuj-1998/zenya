@@ -196,7 +196,7 @@ import coco4 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604815077.jp
 import coco5 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604811107.jpg"
 import coco6 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604803257.jpg"
 import coco7 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604795878.jpg"
-// import coco8 from "../src/assets/Coco Cabana/Coco Cabana /FB_IMG_1746604815077.jpg"
+// import coco8 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604815077.jpg"
 import coco9 from "../src/assets/Coco Cabana/Coco Cabana/cococabana2.jpg"
 import coco10 from "../src/assets/Coco Cabana/Coco Cabana/Coco Cabana Miri.jpeg"
 

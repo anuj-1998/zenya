@@ -88,25 +88,21 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
             </li>
           ))}
           <li key="register">
-            <a
-              href="#register"
-              onClick={(e) => {
+            <Link
+              to="contact"
+              smooth
+              duration={100}
+              onClick={() => {
                 if (shouldRedirectToHome()) {
-                  e.preventDefault();
-                  window.location.href = '/';
+                  window.location.href = '/#contact';
                 }
                 setIsOpen(false);
               }}
               className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold bg-[#dcbba4] hover:bg-[#be946d] text-[#1f3441] shadow ml-2 transition"
-              rel="noopener noreferrer"
             >
-              {/* <img
-                src="https://ext.same-assets.com/1549166357/2999530113.png"
-                className="h-6"
-                alt="register now"
-              /> */}
               Submit Inquiries
-            </a>
+            </Link>
+
           </li>
         </ul>
       </div>
@@ -129,24 +125,21 @@ const Navbar: React.FC<NavbarProps> = ({ menuLinks, logo }) => {
               </li>
             ))}
             <li key="register">
-              <a
-                href="#register"
-                onClick={(e) => {
+              <Link
+                to="contact"
+                smooth
+                duration={100}
+                onClick={() => {
                   if (shouldRedirectToHome()) {
-                    e.preventDefault();
-                    window.location.href = '/';
+                    window.location.href = '/#contact';
                   }
                   setIsOpen(false);
                 }}
-                className="inline-flex items-center gap-1 px-3 py-2 rounded-full font-bold bg-[#dcbba4] hover:bg-[#be946d] text-[#1f3441] shadow transition"
+                className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold bg-[#dcbba4] hover:bg-[#be946d] text-[#1f3441] shadow ml-2 transition"
               >
-                {/* <img
-                  src="https://ext.same-assets.com/1549166357/2999530113.png"
-                  className="h-6"
-                  alt="register now"
-                /> */}
                 Submit Inquiries
-              </a>
+              </Link>
+
             </li>
           </ul>
         </div>
