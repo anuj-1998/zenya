@@ -13,6 +13,8 @@ import ProjectsSection from "./ProjectsSection";
 import Navbar from "./Navbar";
 import aboutusbg from '../src/assets/aboutus_bg.jpeg';
 import ImageGallery from "./ImageGallery";
+import emailjs from "@emailjs/browser"
+import { useRef } from "react";
 const menuLinks = [
   { label: "HOME", to: "home" },
   { label: "ABOUT US", to: "about" },
@@ -21,6 +23,28 @@ const menuLinks = [
   { label: "CONTACT US", to: "contact" },
 ];
 function App() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e:React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    if(form.current){
+        emailjs
+      .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID,import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      })
+      .then(
+        () => {
+            alert('Inquiry submitted successfully!');
+            form.current?.reset();
+        },
+        (error) => {
+          console.error('Failed to send inquiry:', error);
+          alert('Failed to send inquiry. Please try again.');
+        },
+      );
+    }
+  };
   return (
     <Router>
       <Navbar menuLinks={menuLinks} logo={logo} />
@@ -84,16 +108,17 @@ function App() {
                     Contact us
                   </h2>
                   <form
+                     ref={form}
                     id="register"
                     className="flex-1 min-w-[320px] max-w-lg w-full bg-[#fff3e3] rounded-lg shadow-xl p-8"
-                    onSubmit={(e) => e.preventDefault()}
+                    onSubmit={(e) => sendEmail(e)}
                   >
                     <h3 className="font-bold text-xl md:text-3xl mb-4 tracking-wide text-[#1f3441]">
                       Inquiries
                     </h3>
                     <div className="space-y-3">
                       <input
-                        name="first_name"
+                        name="name"
                         placeholder="First name"
                         required
                         className="w-full border-b border-[#b57f6d] font-medium py-2 px-1 bg-transparent outline-none focus:bg-[#e0eaea]/20 transition"
