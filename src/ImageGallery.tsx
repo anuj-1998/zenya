@@ -143,6 +143,36 @@ import pier10 from '../src/assets/pier/pier9.jpg';
 import pier11 from '../src/assets/pier/pier10.jpeg';
 import pier12 from '../src/assets/pier/pier11.jpeg';
 import pier13 from '../src/assets/pier/pier12.jpg';
+import pier14 from "../src/assets/pier/IMG_2512.jpg"
+import pier15 from "../src/assets/pier/IMG_2513.jpg"
+import pier16 from "../src/assets/pier/IMG_2514.jpg"
+import pier17 from "../src/assets/pier/IMG_2515.jpg"  
+import pier18 from "../src/assets/pier/IMG_2516.jpg"
+import pier19 from "../src/assets/pier/IMG_2520.jpg"
+import pier20 from "../src/assets/pier/IMG_2525.jpg"
+import pier21 from "../src/assets/pier/IMG_2533.jpg"
+import pier22 from "../src/assets/pier/IMG_2534.jpg"
+import pier23 from "../src/assets/pier/IMG_2536.jpg"
+import pier24 from "../src/assets/pier/IMG_2541.jpg"
+import pier25 from "../src/assets/pier/IMG_2549.jpg"
+import pier26 from "../src/assets/pier/IMG_2559.jpg"
+import pier27 from "../src/assets/pier/IMG_2561.jpg"
+import pier28 from "../src/assets/pier/IMG_2562.jpg"
+import pier29 from "../src/assets/pier/IMG_2563.jpg"
+import pier30 from "../src/assets/pier/IMG_2564.jpg"
+import pier31 from "../src/assets/pier/IMG_2570.jpg"
+import pier32 from "../src/assets/pier/IMG_2571.jpg"
+import pier33 from "../src/assets/pier/IMG_2573.jpg"
+import pier34 from "../src/assets/pier/IMG_2576.jpg"
+import pier35 from "../src/assets/pier/IMG_2577.jpg"
+import pier36 from "../src/assets/pier/IMG_2578.jpg"
+import pier37 from "../src/assets/pier/IMG_2581.jpg"
+import pier38 from "../src/assets/pier/IMG_2583.jpg"
+import pier39 from "../src/assets/pier/IMG_2590.jpg"
+import pier40 from "../src/assets/pier/IMG_2591.jpg"
+import pier41 from "../src/assets/pier/IMG_2592.jpg"
+import pier42 from "../src/assets/pier/IMG_2594.jpg"
+
 
 
 import miri1 from "../src/assets/Miri ParkCity Everly Hotel/ParkCity Hotel Miri (main).jpeg"
@@ -192,11 +222,11 @@ import evgc14 from "../src/assets/Eastwood Valley Golf Club/_MG_9979_JPG.jpg"
 import coco1 from "../src/assets/Coco Cabana/Coco Cabana/discover-miri-sarawak-malaysia-1920x1080 (main).jpg"
 import coco2 from "../src/assets/Coco Cabana/Coco Cabana/k3iv8xe9ief31.jpg"
 import coco3 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604825645.jpg"
-import coco4 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604815077.jpg"
+import coco4 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604811107.jpg"
 import coco5 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604811107.jpg"
 import coco6 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604803257.jpg"
 import coco7 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604795878.jpg"
-// import coco8 from "../src/assets/Coco Cabana/Coco Cabana/FB_IMG_1746604815077.jpg"
+// import coco8 from "../src/assets/Coco Cabana/Coco Cabana /FB_IMG_1746604815077.jpg"
 import coco9 from "../src/assets/Coco Cabana/Coco Cabana/cococabana2.jpg"
 import coco10 from "../src/assets/Coco Cabana/Coco Cabana/Coco Cabana Miri.jpeg"
 
@@ -245,7 +275,9 @@ const bbtImages = [
 
 const pierImages = [
   pier1, pier2, pier3, pier4, pier5, pier6,pier7,
-  pier8, pier9, pier10, pier11, pier12,pier13
+  pier8, pier9, pier10, pier11, pier12,pier13,pier14,pier15,pier16,pier17,pier18,pier19,pier20,
+  pier21,pier22,pier23,pier24,pier25,pier26,pier27,pier28,pier29,pier30,pier31,pier32,pier33,pier34,
+  pier35,pier36,pier37,pier38,pier39,pier40,pier41,pier42
 ]
 
 const miriImages = [

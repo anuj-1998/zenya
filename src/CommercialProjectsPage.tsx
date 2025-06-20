@@ -72,7 +72,7 @@ const projects = [
   {
     image: commercial7,
     title: '',
-    text: "Oct, 2003 and completed in Nov, 2005 is 100% sold’ to ‘Oct 2003 and was completed in Nov 2005. All units are 100% sold.",
+    text: "Parkcity Commerce Square Phase IV consists of 79 units of 3-storey shop offices. The project started in Oct 2003 and was completed in Nov 2005. All units are 100% sold.",
     reverse: false,
     border:false
   },
@@ -163,7 +163,7 @@ const projects = [
   {
     image: commercial20,
     title: 'Bintulu Waterfront Hotel (Ongoing Project)',
-    text: "Words change to: The 7-storey hotel with 186 guest rooms and 1 penthouse is located next to Bintulu Waterfront Promenade and the megamall The Spring Bintulu.",
+    text: "The 7-storey hotel with 186 guest rooms and 1 penthouse is located next to Bintulu Waterfront Promenade and the megamall The Spring Bintulu.",
     reverse: false,
     border:true
   },

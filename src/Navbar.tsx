@@ -6,6 +6,8 @@ type MenuLink = {
   to: string;
 };
 
+
+//  comment for redeploy 
 type NavbarProps = {
   menuLinks: MenuLink[];
   logo: string;
